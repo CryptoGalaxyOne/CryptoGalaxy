@@ -6,7 +6,7 @@
 <p align="center">
   A Virtual Universe Powered By Blockchain
 </p>
-<p><a href="https://cryptogalaxy.one" target="_blank">Official website</a></p>
+<p align="center"><a href="https://cryptogalaxy.one" target="_blank">Official website:cryptogalaxy.one</a></p>
 
 ---
 
