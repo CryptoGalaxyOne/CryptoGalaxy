@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img  src="https://github.com/zeepin/CryptoGalaxy/blob/master/CryptoGalaxy.png" width="450px">
+  <img  src="https://github.com/zeepin/CryptoGalaxy/blob/master/CryptoGalaxy.png" width="600px">
 </p>
 <h1 align="center"></h1>
 <p align="center">
