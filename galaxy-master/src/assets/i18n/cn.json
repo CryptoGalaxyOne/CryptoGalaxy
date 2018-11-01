@@ -1,0 +1,75 @@
+{
+  "menu": {
+    "home": "首页",
+    "about": "关于",
+    "gala": "GALA",
+    "feature": "特性",
+    "meetup": "国家星请愿",
+    "roadshow": "门票",
+    "faq": "常见问题"
+  },
+  "banner": {
+    "title": "在区块链上拥有你独一无二的星球",
+    "subtitle": "",
+    "mobile-subtitle": "",
+    "getsoon": "等待开启",
+    "ios": "苹果下载",
+    "android": "安卓下载"
+  },
+  "about": {
+    "title": "什么是 crypto galaxy",
+    "des": "首个基于区块链的虚拟宇宙，它是一个去运行在智品区块链上的去中心化娱乐应用，任何人可以在应用中购买并命名属于自己的星球，每个星球都拥有独一无二的属性，并且在第二阶段可以进行星球的交易、勘探和更多有趣的玩法",
+    "video-label": "观看视频",
+    "tips-before": "创世星系上线，60天只释放出",
+    "tips-after": "个星球！",
+    "cards": [{
+      "label": "星球探险家",
+      "value": "每个玩家进入游戏的角色都是一名探险家，去探索属于自己的星球"
+    }, {
+      "label": "神秘的水晶",
+      "value": "每个星球都蕴含神秘水晶，等你去挖掘！水晶可以兑换成 GALA"
+    }, {
+      "label": "数字星际资产",
+      "value": "每个星球拥有独一无二的属性，都是你在区块链上的资产"
+    }, {
+      "label": "探索星域",
+      "value": "庞大的星域体系激发你的探索欲，拥有自己的星域版图"
+    }]
+  },
+  "sell": {
+    "title": "如果获取 GALA token",
+    "des": "Gala是cryptogalaxy上的星际流通货币，游戏中的任何资产、物资、道具的价格都是锚定gala定价。现在，有免费的途径可以获取",
+    "steps": [{
+      "label": "第一步",
+      "value": "通过数字货币交易所获得ZPT"
+    }, {
+      "label": "第二步",
+      "value": "将ZPT存入钱包"
+    }, {
+      "label": "第三步",
+      "value": "根据ZPT发放GALA（实效）"
+    }, {
+      "label": "第四步",
+      "value": "购买星球赚取更多GALA"
+    }]
+  },
+  "system": {
+    "title": "国家排行榜",
+    "des": "每个探险家都代表自己的国家，看哪个国家拥有的星球最多，谁才星际探险的霸主"
+  },
+  "dashboard": {
+    "title": "有趣的激励系统",
+    "des": "游戏中融合了各种有趣的激励机制，不仅极富可玩性，还可以赚钱哦"
+  },
+  "feature": {
+    "title": "任务系统",
+    "des": "丰富的任务系统，可通过完成任务获取GALA、升级道具、获得稀有物品"
+  },
+  "partner": {
+    "strategic-investment-institutions": "战略投资机构",
+    "ecosystem-partner": "生态合作伙伴"
+  },
+  "footer": {
+
+  }
+}

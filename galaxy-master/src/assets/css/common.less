@@ -1,0 +1,67 @@
+/* 大型屏幕 */
+@rem:  37.5rem;
+
+@media only screen and (min-width: 1025px) {
+  #app{
+    width: 10rem;
+  }
+  .wrapper {
+    width: 100%;
+    position: relative;
+  }
+  .wrapper .entry {
+    width: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background: rgba(0, 0, 0, .1);
+  }
+  .wrapper>.entry::before,
+  .wrapper>.entry::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .section::before,
+  .section::after {
+    content: "";
+    display: table;
+  }
+  [hidden-in-lg] {
+    display: none !important;
+  }
+}
+
+
+/* 小型屏幕 */
+
+@media only screen and (max-width: 1024px) {
+  #app{
+    width: 375/@rem;
+  }
+  .wrapper {
+    width: 100%;
+    position: relative;
+  }
+  .wrapper .entry {
+    width: 3.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background: rgba(0, 0, 0, .1);
+  }
+  .wrapper>.entry::before,
+  .wrapper>.entry::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .section::before,
+  .section::after {
+    content: "";
+    display: table;
+  }
+  [hidden-in-sm] {
+    display: none !important;
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="169px" height="45px" viewBox="0 0 169 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="98.4712363%" y1="0%" x2="5.59826761%" y2="176.412874%" id="linearGradient-1">
+            <stop stop-color="#88A1F3" offset="0%"></stop>
+            <stop stop-color="#65EDFF" offset="50.7971939%"></stop>
+            <stop stop-color="#5068E3" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="122" y="0" width="169" height="45" rx="22.5"></rect>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-725.000000, -2754.000000)">
+        <g id="Group-3-Copy" transform="translate(603.000000, 2754.000000)">
+            <g id="Rectangle">
+                <use fill-opacity="0.5" fill="#5068E3" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <rect stroke="url(#linearGradient-1)" stroke-width="2" x="123" y="1" width="167" height="43" rx="21.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

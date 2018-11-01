@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="borderbox">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Crypto Galaxy - The first ever virtual universe based on blockchain</title>
+  <script>
+    (function flexible(window, document) {
+      var docEl = document.documentElement
+      var dpr = window.devicePixelRatio || 1
+
+      // adjust body font size
+      function setBodyFontSize() {
+        if (document.body) {
+          document.body.style.fontSize = (12 * dpr) + 'px'
+        } else {
+          document.addEventListener('DOMContentLoaded', setBodyFontSize)
+        }
+      }
+      setBodyFontSize();
+
+      // set 1rem = viewWidth / 10
+      function setRemUnit() {
+        var rem = docEl.clientWidth / 10
+        docEl.style.fontSize = rem + 'px'
+      }
+
+      setRemUnit()
+
+      // reset rem unit on page resize
+      window.addEventListener('resize', setRemUnit)
+      window.addEventListener('pageshow', function (e) {
+        if (e.persisted) {
+          setRemUnit()
+        }
+      })
+
+      // detect 0.5px supports
+      if (dpr >= 2) {
+        var fakeBody = document.createElement('body')
+        var testElement = document.createElement('div')
+        testElement.style.border = '.5px solid transparent'
+        fakeBody.appendChild(testElement)
+        docEl.appendChild(fakeBody)
+        if (testElement.offsetHeight === 1) {
+          docEl.classList.add('hairlines')
+        }
+        docEl.removeChild(fakeBody)
+      }
+    }(window, document))
+
+  </script>
+</head>
+
+<body>
+  <div id="app">
+    <router-view/>
+  </div>
+  <!-- built files will be auto injected -->
+</body>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110885696-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110885696-2');
+
+</script>
+
+<script>
+  ! function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+  }(window, document, 'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '995933740555432');
+  fbq('track', 'PageView');
+
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=995933740555432&ev=PageView&noscript=1"/>
+</noscript>
+
+
+</html>

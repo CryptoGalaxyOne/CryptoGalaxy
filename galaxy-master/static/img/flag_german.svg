@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="52px" viewBox="0 0 72 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" fill-rule="nonzero">
+            <polygon id="Shape" fill="#E25950" points="0 13.7142857 72 13.7142857 72 37.7142857 0 37.7142857"></polygon>
+            <path d="M0,44.5714286 L0,34.2857143 L72,34.2857143 L72,44.5714286 C72,48.358524 68.9299526,51.4285714 65.1428571,51.4285714 L6.85714286,51.4285714 C3.07004743,51.4285714 0,48.358524 0,44.5714286 Z" id="Shape" fill="#FCD669"></path>
+            <path d="M72,6.85714286 L72,17.1428571 L0,17.1428571 L0,6.85714286 C0,3.07004743 3.07004743,0 6.85714286,0 L65.1428571,0 C68.9299526,0 72,3.07004743 72,6.85714286 Z" id="Shape" fill="#333333"></path>
+        </g>
+    </g>
+</svg>

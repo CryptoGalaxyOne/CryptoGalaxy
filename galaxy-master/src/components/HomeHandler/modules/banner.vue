@@ -1,0 +1,407 @@
+<template>
+  <!-- banner start-->
+  <div class="banner section" :class="{'fix-sm': timesup === 1}">
+    <div class="main">
+      <div class="copywriting">
+        <div class="slogan">{{$t("banner.title")}}<br />
+          <span hidden-in-sm>{{$t("banner.subtitle")}}</span>
+        </div>
+        <div hidden-in-lg class="des">{{$t("banner.mobile-subtitle")}}</div>
+        <div class="countdown" v-if="timesup === -1">
+          <div class="item">
+            <div class="value">{{DD}}</div>
+            <div class="label">DAY</div>
+          </div>
+          <div class="item">
+            <div class="value">{{HH}}</div>
+            <div class="label">HOUR</div>
+          </div>
+          <div class="item">
+            <div class="value">{{MM}}</div>
+            <div class="label">MIN</div>
+          </div>
+          <div class="item">
+            <div class="value">{{SS}}</div>
+            <div class="label">SEC</div>
+          </div>
+        </div>
+        <div class="countdown" hidden-in-sm v-if="timesup === 1"></div>
+        
+        <div class="links" v-if="timesup === -1">
+          <a href="https://t.me/CryptoGalaxyOne" target="_blank" class="invite">Telegram</a>
+          <a href="##" class="getsoon">{{$t("banner.getsoon")}}</a>
+        </div>
+        <div class="links" v-if="timesup === 1">
+          <a href="https://cryptogalaxy.one/#/ios" class="download-ios">{{$t("banner.ios")}}</a>
+          <a href="https://cryptogalaxy.one/static/galaxy_1.5.0.apk" class="download-android">{{$t("banner.android")}}</a>
+        </div>
+      </div>
+      <img class="vision" src="@/assets/img/vision.png" alt="">
+    </div>
+  </div>
+  <!-- banner end -->
+</template>
+
+<script>
+
+import jstracker from 'jstracker'
+jstracker.init({
+  report: (errorLogs) => {
+    alert('banner');
+    alert(JSON.stringify(errorLogs));
+  }
+});
+
+
+import dateFormat from "dateformat";
+
+export default {
+  name: "Banner",
+  data() {
+    return {
+      d: 0,
+      h: 0,
+      m: 0,
+      s: 0,
+      timesup: 0
+    };
+  },
+  computed: {
+    DD() {
+      return this.d >= 10 ? this.d : "0" + this.d;
+    },
+    HH() {
+      return this.h >= 10 ? this.h : "0" + this.h;
+    },
+    MM() {
+      return this.m >= 10 ? this.m : "0" + this.m;
+    },
+    SS() {
+      return this.s >= 10 ? this.s : "0" + this.s;
+    }
+  },
+  mounted() {
+    setInterval(() => {
+      this.countDown("2018/4/23 21:00:00", new Date(), 8);
+    }, 500);
+  },
+  methods: {
+    countDown(deadLine, now, timeZone) {
+      let offset =
+        parseInt((Date.parse(new Date(deadLine)) - Date.parse(now)) / 1000) +
+        (-timeZone * 60 - now.getTimezoneOffset()) * 60;
+
+      if (offset <= 0) {
+        this.timesup = 1;
+        offset = 0;
+      }else{
+        this.timesup = -1
+      }
+
+      this.s = parseInt(offset % 60);
+      this.m = parseInt((offset / 60) % 60);
+      this.h = parseInt((offset / 60 / 60) % 24);
+      this.d = parseInt(offset / 60 / 60 / 24);
+    }
+  }
+};
+</script>
+<style lang="less" scoped>
+@imgPath: "../../../assets/img";
+
+@media only screen and (min-width: 1280px) {
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background: url("@{imgPath}/banner.jpg") no-repeat center center ~"/" cover;
+  }
+  .banner .main {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1068px;
+    height: 660px;
+    // background: rgba(0, 0, 0, 0.5);
+  }
+  .banner .main .copywriting {
+    position: absolute;
+    top: 42%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .banner .main .copywriting .countdown {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .item {
+      .value {
+        width: 78px;
+        height: 96px;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 8px;
+        font-size: 24px;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .label {
+        margin-top: 16px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+  .banner .main .copywriting .links {
+    // margin-top: 81px;
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+  }
+  .banner .main .copywriting .links a {
+    display: block;
+    width: 166px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 100px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .banner .main .copywriting .links a.invite {
+    color: rgba(80, 104, 227, 1);
+    background: rgba(112, 254, 195, 1);
+  }
+  .banner .main .copywriting .links a.getsoon {
+    color: #c8c8c8;
+    background: #847c7c;
+  }
+  .banner .main .copywriting .links a.download-ios {
+    color: rgba(80, 104, 227, 1);
+    background: rgba(112, 254, 195, 1);
+  }
+  .banner .main .copywriting .links a.download-android {
+    color: #fff;
+    background: rgba(80, 104, 227, 1);
+  }
+  .banner .main .copywriting .slogan {
+    font-weight: 500;
+    font-size: 42px;
+    color: #fff;
+    line-height: 1.2;
+  }
+  .banner .main .vision {
+    display: block;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    right: -36px;
+    transform: translateY(-50%);
+  }
+}
+
+@media only screen and (max-width: 1279px) and (min-width: 1025px) {
+  @rem: 138rem;
+
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 900/@rem;
+    background: url("@{imgPath}/banner.jpg") no-repeat center center ~"/" cover;
+  }
+  .banner .main {
+    position: absolute;
+    top: 120/@rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1068/@rem;
+    height: 660/@rem;
+    // background: rgba(0, 0, 0, 0.5);
+  }
+  .banner .main .copywriting {
+    position: absolute;
+    top: 42%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .banner .main .copywriting .countdown {
+    width: 360/@rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60/@rem;
+    margin-bottom: 60/@rem;
+    .item {
+      .value {
+        width: 78/@rem;
+        height: 96/@rem;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 8/@rem;
+        font-size: 24/@rem;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .label {
+        margin-top: 16/@rem;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14/@rem;
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+  .banner .main .copywriting .links {
+    // margin-top: 81/@rem;
+    display: flex;
+    justify-content: space-between;
+    width: 360/@rem;
+  }
+  .banner .main .copywriting .links a {
+    display: block;
+    width: 166/@rem;
+    height: 46/@rem;
+    line-height: 46/@rem;
+    border-radius: 100/@rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20/@rem;
+  }
+  .banner .main .copywriting .links a.invite {
+    color: rgba(80, 104, 227, 1);
+    background: rgba(112, 254, 195, 1);
+  }
+  .banner .main .copywriting .links a.getsoon {
+    color: #c8c8c8;
+    background: #847c7c;
+  }
+  .banner .main .copywriting .links a.download-ios {
+    color: rgba(80, 104, 227, 1);
+    background: rgba(112, 254, 195, 1);
+  }
+  .banner .main .copywriting .links a.download-android {
+    color: #fff;
+    background: rgba(80, 104, 227, 1);
+  }
+  .banner .main .copywriting .slogan {
+    font-weight: 500;
+    font-size: 42/@rem;
+    color: #fff;
+    line-height: 1.2;
+  }
+  .banner .main .vision {
+    display: block;
+    width: 500/@rem;
+    position: absolute;
+    top: 50%;
+    right: -36/@rem;
+    transform: translateY(-50%);
+  }
+}
+
+/* 小型屏幕 */
+
+@media only screen and (max-width: 1024px) {
+  @rem: 37.5rem;
+
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 924/@rem;
+    background: url("@{imgPath}/banner.jpg") no-repeat center center ~"/" cover;
+    &.fix-sm{
+      height: 810/@rem;
+    }
+  }
+  .banner .main {
+    margin-top: 120/@rem;
+  }
+  .banner .main .copywriting {
+    margin-top: 90/@rem;
+  }
+  .banner .main .copywriting .slogan {
+    font-weight: 500;
+    font-size: 22/@rem;
+    color: #fff;
+    text-align: center;
+  }
+  .banner .main .copywriting .des {
+    font-size: 12/@rem;
+    color: #fff;
+    text-align: center;
+  }
+  .banner .main .copywriting .countdown {
+    margin: 24/@rem auto;
+    width: 270/@rem;
+    height: 60/@rem;
+    display: flex;
+    justify-content: space-between;
+    .item {
+      .value {
+        width: 78/3*2/@rem;
+        height: 96/3*2/@rem;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 8/@rem;
+        font-size: 24/@rem;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .label {
+        margin-top: 6/@rem;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14/@rem;
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+  .banner .main .copywriting .links {
+    display: flex;
+    justify-content: space-around;
+    width: 260/@rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60/@rem;
+  }
+  .banner .main .copywriting .links a {
+    display: block;
+    width: 125/@rem;
+    height: 35/@rem;
+    line-height: 35/@rem;
+    border-radius: 100/@rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14/@rem;
+  }
+  .banner .main .copywriting .links a.invite {
+    color: rgba(80, 104, 227, 1);
+    background: rgba(112, 254, 195, 1);
+  }
+  .banner .main .copywriting .links a.getsoon {
+    color: #c8c8c8;
+    background: #847c7c;
+  }
+  .banner .main .copywriting .links a.download-ios {
+    color: rgba(80, 104, 227, 1);
+    background: rgba(112, 254, 195, 1);
+  }
+  .banner .main .copywriting .links a.download-android {
+    color: #fff;
+    background: rgba(80, 104, 227, 1);
+  }
+  .banner .main .vision {
+    display: block;
+    width: 330/@rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+</style>

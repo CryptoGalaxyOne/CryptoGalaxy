@@ -1,0 +1,75 @@
+{
+  "menu": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "gala": "GALA",
+    "feature": "FEATURES",
+    "meetup": "PETITION",
+    "roadshow": "ROADSHOW",
+    "faq": "FAQ"
+  },
+  "banner": {
+    "title": "Discover & collect your planet",
+    "subtitle": "Based on Blockchain",
+    "mobile-subtitle": "The first ever virtual universe based on blockchain",
+    "getsoon": "Coming soon",
+    "ios": "iOS",
+    "android": "Android"
+  },
+  "about": {
+    "title": "What is Crypto Galaxy ?",
+    "des": "Crypto Galaxy, a virtual universe powered by blockchain, is also an entertainment decentralized application that will run under the Zeepin Chain. Anyone can purchase a planet and name it at his or her wish. Each planet will have a unique set of attributes and characteristics. More surprises to come in the near future. You will be able to make transactions and explore and even more fun and adventurous journey on your planet.",
+    "video-label": "Watch intro video",
+    "tips-before": "Crypto galaxy is coming up soon, but the first batch of planets available to users will be quite limited—only",
+    "tips-after": "planets will be released in 60 days.",
+    "cards": [{
+      "label": "An Explorer on a Brand-new Planet",
+      "value": "Each player will switch to be an explorer to discover his own planet once entering into the game."
+    }, {
+      "label": "Mysterious Mineral",
+      "value": "Each planet is in possession of mysterious mineral for you to discover! The mysterious mineral can be converted into GALA as well."
+    }, {
+      "label": "Digital Galaxy Assets",
+      "value": "Each planet is unique, which can be understood as digital assets owned by you on blockchain."
+    }, {
+      "label": "Discovery on Galaxy",
+      "value": "If you are a big fan of adventure, you will be more than thrilled to have great odds of establishing your own galaxy territory."
+    }]
+  },
+  "sell": {
+    "title": "What you can do with GALA token?",
+    "des": "Gala has been developed to serve the whole galaxy as a utility token that will set the price of any assets, tools available in the game. Good news is that you can get free Gala if you can accomplish certain tasks.",
+    "steps": [{
+      "label": "STEP 01",
+      "value": "Buy ZPT token from Kucoin Exchange"
+    }, {
+      "label": "STEP 02",
+      "value": "Hold ZPT token in your wallet"
+    }, {
+      "label": "STEP 03",
+      "value": "Get GALA for every ZPT you hold"
+    }, {
+      "label": "STEP 04",
+      "value": "Buy Planet and dig earn more GALA"
+    }]
+  },
+  "system": {
+    "title": "Country rankings",
+    "des": "Each explorer represents his or her own country. The country owning the most planets will top others on the ranking list."
+  },
+  "dashboard": {
+    "title": "Amusing incentive systems",
+    "des": "Multiple incentive systems enable Crypto Galaxy to be more than entertaining—players can make money as well."
+  },
+  "feature": {
+    "title": "Diversified tasks",
+    "des": "There are plenty of diversified tasks designed for you to accomplish so that you can obtain GALA, upgrade your tools and get other valuable items at no cost."
+  },
+  "partner": {
+    "strategic-investment-institutions": "Strategic investment institutions",
+    "ecosystem-partner": "Ecosystem Partner"
+  },
+  "footer": {
+
+  }
+}

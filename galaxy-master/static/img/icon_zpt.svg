@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="62px" viewBox="0 0 55 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 32</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-32" transform="translate(-7.000000, -4.000000)">
+            <rect id="Rectangle-11" x="0" y="0" width="70" height="70"></rect>
+            <g id="Group-11" transform="translate(8.000000, 5.000000)" stroke="#4AE2C2" stroke-width="2">
+                <polygon id="Stroke-3" fill-opacity="0.3" fill="#4AE2C2" stroke-linecap="round" stroke-linejoin="round" points="52.173913 45.0000211 26.0869989 60 0 45.0000211 0 15.0000634 26.0869989 0 52.173913 15.0000634"></polygon>
+                <path d="M13.52657,7.74193548 L52.173913,30.9677419" id="Stroke-5"></path>
+                <path d="M52.173913,15.483871 L0,44.516129" id="Stroke-7"></path>
+                <path d="M52.173913,29.0322581 L13.52657,52.2580645" id="Stroke-9"></path>
+                <path d="M0,30.9677419 L37,54" id="Stroke-11"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="316px" height="74px" viewBox="0 0 316 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 4 Copy 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="17.1288641%" y1="85.5201184%" x2="14.1062204%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#88A1F3" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#5068E3" stop-opacity="0.3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="36.4308636%" y1="80.2025671%" x2="19.1780521%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#88A1F3" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#5068E3" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-3" x="23" y="25" width="316" height="74" rx="10"></rect>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-286.000000, -3105.000000)" opacity="0.316519475">
+        <g id="Group-27" transform="translate(263.000000, 3080.000000)">
+            <g id="Group-26">
+                <g id="Rectangle-4-Copy-14">
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <rect stroke="url(#linearGradient-2)" stroke-width="1" x="23.5" y="25.5" width="315" height="73" rx="10"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

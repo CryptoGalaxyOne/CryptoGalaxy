@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="57px" viewBox="0 0 60 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 33</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-33" transform="translate(-5.000000, -6.000000)">
+            <g id="thin-0409-wallet-credit-card-money-payment" transform="translate(5.000000, 5.000000)">
+                <rect id="Rectangle-path" x="0" y="0" width="60" height="60"></rect>
+                <rect id="Rectangle-path" x="0" y="0" width="60" height="60"></rect>
+                <g id="Group" transform="translate(0.882353, 1.764706)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <polygon id="Shape" stroke="#B7EB81" fill-opacity="0.5" fill="#F8E71C" points="7.63239706 22.0375462 4.12139706 12.3092749 43.7761471 0.204208658 50.6111471 22.0375462"></polygon>
+                    <path d="M57.8068971,44.4631018 L46.6668971,44.4631018 C43.2538971,44.4631018 40.4898971,41.7248359 40.4898971,38.3465685 C40.4898971,34.9685487 43.2538971,32.2302828 46.6668971,32.2302828 L57.8068971,32.2302828 L57.8068971,44.4631018 Z" id="Shape" stroke="#B7EB81" fill-opacity="0.5" fill="#B7EB81"></path>
+                    <path d="M52.7536471,32.2302828 L52.7536471,22.0375462" id="Shape" stroke="#B7EB81"></path>
+                    <path d="M0.185397059,17.1735343 L0.185397059,50.4786213 C0.185397059,52.6316014 1.94714706,54.3780505 4.12114706,54.3780505 L52.7536471,54.3780505 L52.7536471,44.4631018 L52.7536471,22.062679 L3.70774838,22.062679 C2.6414264,21.8340871 1.77737768,21.2605077 1.11560223,20.3419406 C0.453826777,19.4233735 0.143758388,18.3672381 0.185397059,17.1735343 Z" id="Shape" stroke="#B8E986" fill-opacity="0.5" fill="#B8E986"></path>
+                    <polyline id="Shape" stroke="#B7EB81" points="47.6193971 12.3092749 51.3900107 12.3092749 51.3900107 21.9384333"></polyline>
+                    <path d="M52.7536471,22.0375462 L4.12139706,22.0375462 C1.94739706,22.0375462 0.185647059,19.8595602 0.185647059,17.1732868 C0.185647059,14.4875085 1.94739706,12.3090273 4.12139706,12.3090273" id="Shape" stroke="#B7EB81"></path>
+                </g>
+            </g>
+            <rect id="Rectangle-11-Copy" x="0" y="0" width="70" height="70"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="26px" viewBox="0 0 32 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="008_Invitation_Digg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-40.000000, -60.000000)">
+        <g id="Group" transform="translate(40.000000, 53.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="arrow-left" transform="translate(0.000000, 7.000000)">
+                <path d="M30.3999923,11.375292 L5.46267559,11.375292 L13.9315152,2.7740998 C14.5563182,2.13953234 14.5559182,1.1108993 13.9315152,0.475925593 C13.3067123,-0.158641864 12.2939076,-0.158641864 11.6687046,0.475925593 L0.468652206,11.8510145 C-0.156150719,12.4855819 -0.156150719,13.5146212 0.468252204,14.1487824 L11.6683046,25.5238713 C11.9807061,25.841155 12.390308,26 12.7999099,26 C13.2091119,26 13.6187138,25.841155 13.9315152,25.523465 C14.5563182,24.8893038 14.5559182,23.8602645 13.9315152,23.2261033 L5.46227559,14.6253174 L30.3999923,14.6253174 C31.2835965,14.6253174 32.0003998,13.8973117 31.9999998,13.0003047 C31.9999998,12.1028914 31.2835965,11.375292 30.3999923,11.375292 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
