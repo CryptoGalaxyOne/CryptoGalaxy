@@ -6,9 +6,7 @@
 
 1. 打开终端，通过 cd 命令进入你想下载代码的目录
 
-2. 输入 git clone https://git.coding.net/stuzhaoxing/galaxy.git 下载代码
-
-过程中如果要求输入账号密码，则输入注册 coding.net 时候的邮箱和登录密码
+2. 输入 git clone https://github.com/zeepin/CryptoGalaxy/ 下载代码
 
 3. cd 进入 galaxy 文件夹
 
