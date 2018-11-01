@@ -80,6 +80,7 @@ export default {
         font-size: 18 / @unit;
         color: #ffffff;
         text-align: center;
+        padding:0;
       }
     }
 
