@@ -2,7 +2,10 @@
 
   <div class="download section">
     <a class="link ios" href="https://cryptogalaxy.one/#/ios">iOS Download</a>
+    <a class="link android" href="http://365imgs.cn/zeepin/galaxy_1.6.0.apk">Android Download</a>
+    <!--
     <a class="link android" href="https://cryptogalaxy.one/static/galaxy_1.6.0.apk">Android Download</a>
+    -->
   </div>
 </template>
 

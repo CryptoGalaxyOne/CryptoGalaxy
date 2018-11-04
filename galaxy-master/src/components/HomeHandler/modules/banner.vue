@@ -33,7 +33,10 @@
         </div>
         <div class="links" v-if="timesup === 1">
           <a href="https://cryptogalaxy.one/#/ios" class="download-ios">{{$t("banner.ios")}}</a>
+          <a href="http://365imgs.cn/zeepin/galaxy_1.6.0.apk" class="download-android">{{$t("banner.android")}}</a>
+          <!--
           <a href="https://cryptogalaxy.one/static/galaxy_1.6.0.apk" class="download-android">{{$t("banner.android")}}</a>
+          -->
         </div>
       </div>
       <img class="vision" src="@/assets/img/vision.png" alt="">
