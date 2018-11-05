@@ -17,7 +17,7 @@
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.yourCompany.productName</string>
+                <string>com.zeepin.cryptogalaxy</string>
                 <key>bundle-version</key>
                 <string>1.6.0</string>
                 <key>kind</key>
