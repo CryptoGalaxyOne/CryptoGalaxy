@@ -10,7 +10,7 @@
     </div>
 
     <div class="bd">
-      <a class="link" :class="{doing: doing}" @click="download" href="itms-services://?action=download-manifest&url=https:/cryptogalaxy.one/static/manifest.plist">Install iOS App</a>
+      <a class="link" :class="{doing: doing}" @click="download" href="itms-services://?action=download-manifest&url=https://cryptogalaxy.one/static/manifest.plist">Install iOS App</a>
       <!--<a class="link" :class="{doing: doing}" @click="download" href="http://aq.pgyer.com/b0f3b49243a87f4a89083b38e8de3836.ipa?attname=CSR201811010613OHYCSG-resigned.ipa">Install iOS App</a>-->
     </div>
 
