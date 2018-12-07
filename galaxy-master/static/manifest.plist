@@ -19,11 +19,7 @@
                 <key>bundle-identifier</key>
                 <string>com.zeepin.cryptogalaxy</string>
                 <key>bundle-version</key>
-<<<<<<< HEAD
                 <string>1.6.2</string>
-=======
-                <string>1.6.1</string>
->>>>>>> 91a79b31af44c22b68a41e46a6a2a28d87c48a23
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
