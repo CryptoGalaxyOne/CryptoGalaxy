@@ -11,7 +11,7 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>http://365imgs.cn/zeepin/galaxy_1.6.2.ipa</string>
+                    <string>https://cryptogalaxy.one/static/galaxy_1.6.2.ipa</string>
                 </dict>
             </array>
             <key>metadata</key>
@@ -19,7 +19,11 @@
                 <key>bundle-identifier</key>
                 <string>com.zeepin.cryptogalaxy</string>
                 <key>bundle-version</key>
+<<<<<<< HEAD
                 <string>1.6.2</string>
+=======
+                <string>1.6.1</string>
+>>>>>>> 91a79b31af44c22b68a41e46a6a2a28d87c48a23
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
