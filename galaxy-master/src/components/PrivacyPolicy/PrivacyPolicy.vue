@@ -1,5 +1,6 @@
 <template>
     <div class="PrivacyPolicy-group">
+        <div class="content">
        <h1>CryptoGalaxy Privacy Policy </h1>
 <p>To anyone who uses CryptoGalaxy:</p>
 <p>Thanks for playing CryptoGalaxy. CryptoGalaxy Privacy Policy is signed between you (reference to “the user”) and ZEEPIN FOUNDATION PTE. LTD. (“ZEEPIN FOUNDATION”), which is legally binding. In this agreement: (1) “We”, “Us” or “Our” refers to ZEEPIN FOUDATION; (2) “You” or “Yours” refers to the person with whom ZEEPIN FOUNDATION enters into this Privacy Policy. In other context, you and ZEEPIN FOUNDATION can refer to “one party” or “both parties” if necessary.</p>
@@ -262,7 +263,7 @@
 <p>5.This Policy shall come into effect as of 13th, September</p>
 <p>6.Matters not mentioned herein will be included in updated notices or announcements posted by ZEEPIN FOUNDATION on a regular basis. Stay tuned with us.</p>
 <p class="r">ZEEPIN FOUNDATION</p>
-
+    </div>
     </div>
 </template>
 <script>
@@ -277,34 +278,42 @@ export default {
 </script>
 <style lang="less" scoped>
     .PrivacyPolicy-group{
-        width:1200px;
-        margin:0 auto;
-        padding-top:20px;
-        padding-bottom:20px;
-        h1{
-            margin-top:50px;
-            margin-bottom:20px;
-            text-align: center;
-            font-size: 26px;
-            font-weight: 500;
-        }
-        h2{
-            font-size: 16px;
-            font-weight: 500;
-            margin-top:15px;
-            margin-bottom:10px;
-        }
-        p{
-            font-size: 16px;
-            margin-bottom:10px;
-            &.b{
-                font-weight: 500; 
+        background: #fff;
+        width:100%;
+        .content{
+            width:1200px;
+            margin:0 auto;
+            padding-top:20px;
+            padding-bottom:20px;
+            background: #fff;
+            h1{
+                margin-top:50px;
+                margin-bottom:20px;
+                text-align: center;
+                font-size: 26px;
+                font-weight: 500;
+                color:#000;
             }
-            &.r{
-                text-align:right;
+            h2{
+                font-size: 16px;
+                font-weight: 500;
+                margin-top:15px;
+                margin-bottom:10px;
+                color:#000;
             }
-            &.n{
-               /*  text-indent:12px; */
+            p{
+                font-size: 16px;
+                margin-bottom:10px;
+                color:#333;
+                &.b{
+                    font-weight: 500; 
+                }
+                &.r{
+                    text-align:right;
+                }
+                &.n{
+                /*  text-indent:12px; */
+                }
             }
         }
     }
