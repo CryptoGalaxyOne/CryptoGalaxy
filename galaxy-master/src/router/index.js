@@ -6,6 +6,7 @@ import ShareCardHandler from '@/components/InviteHandler/ShareCardHandler.vue';
 import ShareHandler from '@/components/ShareHandler/index.js';
 import DownloadHandler from '@/components/DownloadHandler/index.js';
 import NoticeHandler from '@/components/NoticeHandler/index.js';
+import PrivacyPolicy from '@/components/PrivacyPolicy/index.js';
 
 Vue.use(Router);
 
@@ -34,5 +35,9 @@ export default new Router({
     path: '/notice/:v?',
     name: 'notice',
     component: NoticeHandler
+  },{
+    path: '/PrivacyPolicy',
+    name: 'PrivacyPolicy',
+    component: PrivacyPolicy
   }]
 })
