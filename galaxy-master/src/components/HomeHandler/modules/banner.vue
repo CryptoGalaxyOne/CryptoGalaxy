@@ -33,7 +33,8 @@
         </div>
         <div class="links" v-if="timesup === 1">
           <a href="https://cryptogalaxy.one/#/ios" class="download-ios">{{$t("banner.ios")}}</a>
-          <a href="https://cryptogalaxy.one/static/galaxy_1.6.2.apk" class="download-android">{{$t("banner.android")}}</a>
+          <a href="https://play.google.com/store/apps/details?id=com.zeepin.galaxy" target="_blank" class="download-android">{{$t("banner.googlePlay")}}</a>
+           <a href="https://cryptogalaxy.one/static/galaxy_1.6.3.apk" class="download-android">{{$t("banner.android")}}</a>
         </div>
       </div>
       <img class="vision" src="@/assets/img/vision.png" alt="">
@@ -162,7 +163,7 @@ export default {
     // margin-top: 81px;
     display: flex;
     justify-content: space-between;
-    width: 360px;
+    width: 540px;
   }
   .banner .main .copywriting .links a {
     display: block;
@@ -366,20 +367,25 @@ export default {
   .banner .main .copywriting .links {
     display: flex;
     justify-content: space-around;
-    width: 260/@rem;
+    flex-wrap:wrap;
+    width: 178/@rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60/@rem;
   }
   .banner .main .copywriting .links a {
     display: block;
-    width: 125/@rem;
-    height: 35/@rem;
-    line-height: 35/@rem;
+    width: 100%;
+    height: 36/@rem;
+    line-height: 36/@rem;
     border-radius: 100/@rem;
     text-align: center;
     font-weight: 500;
     font-size: 14/@rem;
+    margin-top:15/@rem;
+  }
+  .banner .main .copywriting .links a:first-child{
+    margin-top:0;
   }
   .banner .main .copywriting .links a.invite {
     color: rgba(80, 104, 227, 1);
