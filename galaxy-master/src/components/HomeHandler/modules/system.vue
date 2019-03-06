@@ -4,7 +4,7 @@
   <div id="feature" class="system section">
     <div class="main">
       <div class="title">Game System</div>
-      <div class="des">Crypto Galaxy, a virtual universe powered by blockchain</div>
+      <div class="des">CryptoGalaxy, a virtual universe powered by blockchain</div>
       <div class="swiper">
         <div class="slides">
 

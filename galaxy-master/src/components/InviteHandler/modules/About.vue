@@ -1,7 +1,7 @@
 <template>
 
   <div class="about section">
-    <div class="title">What is Crypto Galaxy ?</div>
+    <div class="title">What is CryptoGalaxy ?</div>
     <div class="banner">
       <div class="text">
         <div class="des">The first ever virtual universe based on blockchain. It’s a decentralized creative dApp running on Zeepin blockchain. Just send cryptocurrencies like ZPT or NEO to Galaxy address, a brand new planet will be created</div>

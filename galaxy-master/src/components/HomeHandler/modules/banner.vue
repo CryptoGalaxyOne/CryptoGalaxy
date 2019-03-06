@@ -34,7 +34,7 @@
         <div class="links" v-if="timesup === 1">
           <a href="https://cryptogalaxy.one/#/ios" class="download-ios">{{$t("banner.ios")}}</a>
           <a href="https://play.google.com/store/apps/details?id=com.zeepin.galaxy" target="_blank" class="download-android">{{$t("banner.googlePlay")}}</a>
-           <a href="https://cryptogalaxy.one/static/galaxy_1.6.3.apk" class="download-android">{{$t("banner.android")}}</a>
+          <a href="https://cryptogalaxy.one/static/CryptoGalaxy2.0.0.apk" class="download-android">{{$t("banner.android")}}</a>
         </div>
       </div>
       <img class="vision" src="@/assets/img/vision.png" alt="">
