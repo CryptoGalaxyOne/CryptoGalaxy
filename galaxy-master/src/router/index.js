@@ -7,6 +7,7 @@ import ShareHandler from '@/components/ShareHandler/index.js';
 import DownloadHandler from '@/components/DownloadHandler/index.js';
 import NoticeHandler from '@/components/NoticeHandler/index.js';
 import PrivacyPolicy from '@/components/PrivacyPolicy/index.js';
+import TermsOfUse from '@/components/TermsOfUse/index.js';
 
 Vue.use(Router);
 
@@ -39,5 +40,9 @@ export default new Router({
     path: '/PrivacyPolicy',
     name: 'PrivacyPolicy',
     component: PrivacyPolicy
+  },{
+    path: '/TermsOfUse',
+    name: 'TermsOfUse',
+    component: TermsOfUse
   }]
 })

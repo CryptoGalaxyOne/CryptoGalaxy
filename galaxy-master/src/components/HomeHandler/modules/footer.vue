@@ -11,7 +11,7 @@
     <div class="link">
       <a href="##">About Galaxy</a>
       <a href="##">Blog</a>
-      <a href="##">Terms of use</a>
+      <a href="/#/TermsOfUse" target="_blank">Terms of use</a>
       <a href="/#/PrivacyPolicy" target="_blank">Privacy policy</a>
     </div>
     <div class="copyright">Copyright © 2018 Galaxy.One All rights reserved.</div>
