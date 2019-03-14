@@ -5,7 +5,7 @@ import InviteHandler from '@/components/InviteHandler/InviteHandler.vue';
 import ShareCardHandler from '@/components/InviteHandler/ShareCardHandler.vue';
 import ShareHandler from '@/components/ShareHandler/index.js';
 import DownloadHandler from '@/components/DownloadHandler/index.js';
-import NoticeHandler from '@/components/NoticeHandler/index.js';
+/* import NoticeHandler from '@/components/NoticeHandler/index.js'; */
 import PrivacyPolicy from '@/components/PrivacyPolicy/index.js';
 import TermsOfUse from '@/components/TermsOfUse/index.js';
 
@@ -33,10 +33,6 @@ export default new Router({
     name: 'download',
     component: DownloadHandler
   },{
-    path: '/notice/:v?',
-    name: 'notice',
-    component: NoticeHandler
-  },{
     path: '/PrivacyPolicy',
     name: 'PrivacyPolicy',
     component: PrivacyPolicy
@@ -44,5 +40,9 @@ export default new Router({
     path: '/TermsOfUse',
     name: 'TermsOfUse',
     component: TermsOfUse
+  },{
+    path: '*',
+    name: 'home',
+    component: HomeHandler
   }]
 })
