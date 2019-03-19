@@ -32,12 +32,12 @@
           <a href="##" class="getsoon">{{$t("banner.getsoon")}}</a>
         </div>
         <div class="links" v-if="timesup === 1">
-          <a href="https://cryptogalaxy.one/#/ios" class="download-ios">{{$t("banner.ios")}}</a>
-          <!--
+          <a href="https://cryptogalaxy.one/#/ios" class="download-android">{{$t("banner.ios")}}</a>
+          
           <a href="https://play.google.com/store/apps/details?id=com.zeepin.galaxy" target="_blank" class="download-android">{{$t("banner.googlePlay")}}</a>
-          -->
-          <a href="http://cdn.zeepin.io/cryptogalaxy/CryptoGalaxy2.0.1.apk" class="download-android">{{$t("banner.android")}}</a>
-        </div>
+         
+<!--           <a href="http://cdn.zeepin.io/cryptogalaxy/CryptoGalaxy2.0.1.apk" class="download-android">{{$t("banner.android")}}</a>
+ -->        </div>
       </div>
       <img class="vision" src="@/assets/img/vision.png" alt="">
     </div>
@@ -164,7 +164,7 @@ export default {
   .banner .main .copywriting .links {
     // margin-top: 81px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width: 540px;
   }
   .banner .main .copywriting .links a {
@@ -177,6 +177,9 @@ export default {
     font-weight: 500;
     font-size: 20px;
   }
+  .banner .main .copywriting .links a.download-android{
+    margin-left:6%;
+  }
   .banner .main .copywriting .links a.invite {
     color: rgba(80, 104, 227, 1);
     background: rgba(112, 254, 195, 1);
@@ -187,7 +190,7 @@ export default {
   }
   .banner .main .copywriting .links a.download-ios {
     color: rgba(80, 104, 227, 1);
-    background: rgba(112, 254, 195, 1);
+    background: #fff;
   }
   .banner .main .copywriting .links a.download-android {
     color: #fff;
@@ -278,7 +281,7 @@ export default {
   }
   .banner .main .copywriting .links a.invite {
     color: rgba(80, 104, 227, 1);
-    background: rgba(112, 254, 195, 1);
+    background: rgb(29, 70, 53);
   }
   .banner .main .copywriting .links a.getsoon {
     color: #c8c8c8;
@@ -286,7 +289,7 @@ export default {
   }
   .banner .main .copywriting .links a.download-ios {
     color: rgba(80, 104, 227, 1);
-    background: rgba(112, 254, 195, 1);
+    background: #fff;
   }
   .banner .main .copywriting .links a.download-android {
     color: #fff;
@@ -399,7 +402,7 @@ export default {
   }
   .banner .main .copywriting .links a.download-ios {
     color: rgba(80, 104, 227, 1);
-    background: rgba(112, 254, 195, 1);
+    background: #fff;
   }
   .banner .main .copywriting .links a.download-android {
     color: #fff;

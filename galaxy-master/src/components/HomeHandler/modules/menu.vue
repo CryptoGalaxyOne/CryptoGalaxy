@@ -4,12 +4,13 @@
       <a href="##" class="logo">galaxy</a>
       <div hidden-in-lg class="trigger" @click="openMenu"></div>
       <nav class="nav" :class="{open: trigger}" @click="closeMenu">
-        <a class="item active" href="##" @click="scrollTo('home')">{{$t("menu.home")}}</a>
-        <a class="item" href="javascript:;" @click="scrollTo('about')">{{$t("menu.about")}}</a>
-        <a class="item" href="javascript:;" @click="scrollTo('gala')">{{$t("menu.gala")}}</a>
-        <a class="item" href="javascript:;" @click="scrollTo('feature')">{{$t("menu.feature")}}</a>
-        <a class="item" href="https://medium.com/@zeepin/crypto-galaxy-faq-2c47a6ed5310" target="_blank">{{$t("menu.faq")}}</a>
-        <a class="item" href="http://arting365.com/galaxy/ticket" target="_blank">{{$t("menu.roadshow")}}</a>
+        <a class="item" :class="{'active':activeIndex == 'home'}" href="##" @click="scrollTo('home')">{{$t("menu.home")}}</a>
+        <a class="item" :class="{'active':activeIndex == 'about'}" href="javascript:;" @click="scrollTo('about')">{{$t("menu.about")}}</a>
+        <a class="item" :class="{'active':activeIndex == 'gala'}" href="javascript:;" @click="scrollTo('gala')">{{$t("menu.gala")}}</a>
+        <a class="item" :class="{'active':activeIndex == 'feature'}" href="javascript:;" @click="scrollTo('feature')">{{$t("menu.feature")}}</a>
+        <a class="item" :class="{'active':activeIndex == 'faq'}" @click="scrollTo('faq')" >{{$t("menu.faq")}}</a>
+        <!-- <a class="item" href="http://arting365.com/galaxy/ticket" target="_blank">{{$t("menu.roadshow")}}</a> -->
+        <a class="item" :class="{'active':activeIndex == 'quick'}" @click="scrollTo('quick')" >{{$t("menu.quick")}}</a>
         <a class="i18n" href="javascript:;">
           <i hidden-in-sm class="icon" :class="flag"></i>
           <div class="icons">
@@ -28,8 +29,8 @@
 import jstracker from 'jstracker'
 jstracker.init({
   report: (errorLogs) => {
-    alert('menu');
-    alert(JSON.stringify(errorLogs));
+    //alert('menu');
+    //alert(JSON.stringify(errorLogs));
   }
 });
 
@@ -42,7 +43,8 @@ export default {
     return {
       trigger: false,
       timer: 0,
-      flag: getQuery("lan") || "en"
+      flag: getQuery("lan") || "en",
+      activeIndex:'home',
     };
   },
   mounted() {
@@ -67,10 +69,21 @@ export default {
   },
   methods: {
     scrollTo(anchor) {
-      location.hash = `#${anchor}`;
+      //this.activeIndex = anchor;
+      
       // document.querySelector(`#${anchor}`).scrollIntoView({
         // behavior: "smooth"
       // });
+      switch(anchor){
+        case 'faq':
+          window.open('https://medium.com/@zeepin/crypto-galaxy-faq-2c47a6ed5310');
+          break;
+        case 'quick':
+          window.open('https://xzusd.com/payment');
+          break;
+        default:
+        location.hash = `#${anchor}`;
+      }
     },
     openMenu() {
       this.trigger = true;
@@ -118,9 +131,18 @@ export default {
     color: #fff;
     font-size: 18px;
   }
-  .menu .nav a.active,
-  .menu .nav a:hover {
+  .menu .nav a.active {
     color: #70fec3;
+    border-bottom:1px solid #70fec3;
+  }
+  .menu .nav a:hover {
+    color: #fff;
+    border-bottom:1px solid #fff;
+    cursor: pointer;
+  }
+  .menu .nav a:hover:last-child,
+  .menu .nav a:active:last-child{
+    border:none;
   }
   .menu .nav .item {
     margin-left: 60px;
@@ -206,9 +228,18 @@ export default {
     color: #fff;
     font-size: 18/@rem;
   }
-  .menu .nav a.active,
-  .menu .nav a:hover {
+   .menu .nav a.active {
     color: #70fec3;
+    border-bottom:1px solid #70fec3;
+  }
+  .menu .nav a:hover {
+    color: #fff;
+    border-bottom:1px solid #fff;
+    cursor: pointer;
+  }
+  .menu .nav a:hover:last-child,
+  .menu .nav a:active:last-child{
+    border:none;
   }
   .menu .nav .item {
     margin-left: 60/@rem;
@@ -315,9 +346,19 @@ export default {
     font-size: 18/@rem;
     display: block;
   }
-  .menu .nav a.active,
-  .menu .nav a:hover {
+  .menu .nav a.active {
     color: #70fec3;
+    border-bottom:1px solid #70fec3;
+  }
+  .menu .nav a:hover {
+    color: #fff;
+    border-bottom:1px solid #fff;
+    cursor: pointer;
+  }
+  .menu .nav a:hover:last-child,
+  .menu .nav a:active:last-child{
+    border:none;
+    
   }
   .menu .nav .item {
     line-height: 60/@rem;
