@@ -16,7 +16,7 @@
       <div class="how">
         <div class="text">
           <div class="count">{{$t("about.tips-before")}}
-            <span style="color:#70FEC3;">2000</span>{{$t("about.tips-after")}}</div>
+            <span style="color:#70FEC3;">4100</span> {{$t("about.tips-after")}}</div>
         </div>
       </div>
       <div class="others">
