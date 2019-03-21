@@ -11,7 +11,7 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>http://cdn.zeepin.io/cryptogalaxy/CryptoGalaxy2.0.1.ipa</string>
+                    <string>http://cdn.zeepin.io/cryptogalaxy/CryptoGalaxy2.0.2.ipa</string>
                 </dict>
             </array>
             <key>metadata</key>
@@ -19,7 +19,7 @@
                 <key>bundle-identifier</key>
                 <string>com.zeepin.cryptogalaxy</string>
                 <key>bundle-version</key>
-                <string>2.0.1</string>
+                <string>2.0.2</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
