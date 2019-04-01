@@ -39,7 +39,7 @@
     }]
   },
   "sell": {
-    "title": "如果获取 Gala token",
+    "title": "如何获取 Gala token",
     "des": "Gala是cryptoGalaxy上的星际流通货币，游戏中的任何资产、物资、道具的价格都是锚定Gala定价。现在，有免费的途径可以获取",
     "steps": [{
       "label": "第一步",
