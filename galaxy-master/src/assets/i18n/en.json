@@ -39,11 +39,11 @@
     }]
   },
   "sell": {
-    "title": "What you can do with Gala token?",
+    "title": "How can you get Gala?",
     "des": "Gala has been developed to serve the whole Galaxy as a utility token that will set the price of any assets, tools available in the game. Good news is that you can get free Gala if you can accomplish certain tasks.",
     "steps": [{
       "label": "STEP 01",
-      "value": "Buy ZPT token from Kucoin Exchange"
+      "value": "Buy ZPT token from Exchanges"
     }, {
       "label": "STEP 02",
       "value": "Hold ZPT token in your wallet"
