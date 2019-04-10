@@ -36,7 +36,7 @@
       
 <!--           <a href="https://play.google.com/store/apps/details?id=com.zeepin.galaxy" target="_blank" class="download-android">{{$t("banner.googlePlay")}}</a>
  -->          
-          <a href="http://cdn.zeepin.io/cryptogalaxy/CryptoGalaxy2.0.3.apk" class="download-android">{{$t("banner.android")}}</a>
+          <a href="http://cdn.zeepin.io/cryptogalaxy/CryptoGalaxy2.0.4.apk" class="download-android">{{$t("banner.android")}}</a>
         </div>
       </div>
       <img class="vision" src="@/assets/img/vision.png" alt="">
