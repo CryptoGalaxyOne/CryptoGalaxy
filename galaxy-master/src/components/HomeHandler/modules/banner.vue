@@ -34,8 +34,8 @@
         <div class="links" v-if="timesup === 1">
           <a href="https://cryptogalaxy.one/#/ios" class="download-android">{{$t("banner.ios")}}</a>
       
-<!--           <a href="https://play.google.com/store/apps/details?id=com.zeepin.galaxy" target="_blank" class="download-android">{{$t("banner.googlePlay")}}</a>
- -->          
+          <a href="https://play.google.com/store/apps/details?id=com.zeepin.CryptoGalaxy" target="_blank" class="download-android">{{$t("banner.googlePlay")}}</a>
+           
           <a href="http://cdn.zeepin.io/cryptogalaxy/CryptoGalaxy2.0.5.apk" class="download-android">{{$t("banner.android")}}</a>
         </div>
       </div>
