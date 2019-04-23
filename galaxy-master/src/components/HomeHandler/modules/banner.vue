@@ -1,7 +1,16 @@
 <template>
   <!-- banner start-->
   <div class="banner section" :class="{'fix-sm': timesup === 1}">
+      
     <div class="main">
+      <!--announcement-->
+       <div class="c-announcement" v-if="isAnnouncement == '1'">
+         <div class="c-announcement-cent">
+           <marquee> {{$t("banner.text")}}</marquee>
+         </div>
+         <i class="c-announcement-close" @click="closeAnnouncement"></i>
+       </div>
+
       <div class="copywriting">
         <div class="slogan">{{$t("banner.title")}}<br />
           <span hidden-in-sm>{{$t("banner.subtitle")}}</span>
@@ -26,7 +35,7 @@
           </div>
         </div>
         <div class="countdown" hidden-in-sm v-if="timesup === 1"></div>
-        
+      
         <div class="links" v-if="timesup === -1">
           <a href="https://t.me/CryptoGalaxyOne" target="_blank" class="invite">Telegram</a>
           <a href="##" class="getsoon">{{$t("banner.getsoon")}}</a>
@@ -66,7 +75,8 @@ export default {
       h: 0,
       m: 0,
       s: 0,
-      timesup: 0
+      timesup: 0,
+      isAnnouncement:'1'
     };
   },
   computed: {
@@ -87,6 +97,9 @@ export default {
     setInterval(() => {
       this.countDown("2018/4/23 21:00:00", new Date(), 8);
     }, 500);
+    if(sessionStorage.getItem('announcement')){
+      this.isAnnouncement = sessionStorage.getItem('announcement');
+    }
   },
   methods: {
     countDown(deadLine, now, timeZone) {
@@ -105,6 +118,10 @@ export default {
       this.m = parseInt((offset / 60) % 60);
       this.h = parseInt((offset / 60 / 60) % 24);
       this.d = parseInt(offset / 60 / 60 / 24);
+    },
+    closeAnnouncement(){
+      this.isAnnouncement = '2';
+      sessionStorage.setItem('announcement',this.isAnnouncement);
     }
   }
 };
@@ -209,6 +226,34 @@ export default {
     top: 50%;
     right: -36px;
     transform: translateY(-50%);
+  }
+  .banner .main .c-announcement{
+    width: 58%;
+    position:absolute;
+    height:50px;
+    background: rgba(0, 0, 0, 0.5) url( '@{imgPath}/cement.png') 20px center  no-repeat;
+    background-size:auto 60%;
+    z-index: 999;
+    top:30px;
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+  }
+  .banner .main .c-announcement .c-announcement-cent{
+    flex:1;
+    line-height: 30px;
+    padding:10px 10px 10px 60px;
+    color:#fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
+  .banner .main .c-announcement .c-announcement-close{
+    display: block;
+    width:50px;
+    background: url( '@{imgPath}/colse.png') center center  no-repeat;
+    background-size:auto 30% ;
+    cursor: pointer;
   }
 }
 
@@ -413,6 +458,35 @@ export default {
     width: 330/@rem;
     margin-left: auto;
     margin-right: auto;
+  }
+   .banner .main .c-announcement{
+    width: 90%;
+    left:5%;
+    position:absolute;
+    height:30px;
+    background: rgba(0, 0, 0, 0.5) url( '@{imgPath}/cement.png') 20px center  no-repeat;
+    background-size:auto 60%;
+    z-index: 999;
+    top:80px;
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+  }
+  .banner .main .c-announcement .c-announcement-cent{
+    flex:1;
+    line-height: 30px;
+    padding:0px 0px 0px 50px;
+    color:#fff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
+  .banner .main .c-announcement .c-announcement-close{
+    display: block;
+    width:50px;
+    background: url( '@{imgPath}/colse.png') center center  no-repeat;
+    background-size:auto 30% ;
+    cursor: pointer;
   }
 }
 </style>

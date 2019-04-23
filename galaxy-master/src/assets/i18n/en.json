@@ -16,7 +16,8 @@
     "getsoon": "Coming soon",
     "ios": "iOS",
     "googlePlay": "Google Play",
-    "android": "Android"
+    "android": "Android",
+    "text":"For IOS users: We will upload new IPA for you to install soon and the name will change into CryptoGalaxy. The previous version will stop working after 4：00PM（UTC）,April 25. Please kindly backup the keystore or private key you use to access the game in advance and make sure you download the updated version."
   },
   "about": {
     "title": "What is CryptoGalaxy ?",

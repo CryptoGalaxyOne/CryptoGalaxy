@@ -16,7 +16,8 @@
     "getsoon": "等待开启",
     "ios": "苹果下载",
     "googlePlay": "谷歌商店",
-    "android": "安卓下载"
+    "android": "安卓下载",
+    "text":"IOS用户请注意：我们将上传新的IPA安装包，使用新的安装包您会发现APP名称显示为CryptoGalaxy；老版安装包将会在4.25日4：00PM（UTC）后失效，届时必须使用新版安装包才能进入游戏，请您务必做好账户备份。"
   },
   "about": {
     "title": "什么是 CryptoGalaxy",
