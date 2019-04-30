@@ -5,9 +5,14 @@
       <div hidden-in-lg class="trigger" @click="openMenu"></div>
       <nav class="nav" :class="{open: trigger}" @click="closeMenu">
         <a class="item" :class="{'active':activeIndex == 'home'}" href="##" @click="scrollTo('home')">{{$t("menu.home")}}</a>
-        <a class="item" :class="{'active':activeIndex == 'about'}" href="javascript:;" @click="scrollTo('about')">{{$t("menu.about")}}</a>
+        <a class="item" :class="{'active':activeIndex == 'about-us'}" href="##" @click="scrollTo('about-us')">{{$t("menu.about-us")}}</a>
+        <a class="item" :class="{'active':activeIndex == 'market-place'}" href="##" @click="scrollTo('market-place')">{{$t("menu.market-place")}}</a>
+    <!--     <a class="item" :class="{'active':activeIndex == 'community'}" href="##" @click="scrollTo('community')">{{$t("menu.community")}}</a>
+        <a class="item" :class="{'active':activeIndex == 'introduction'}" href="##" @click="scrollTo('introduction')">{{$t("menu.introduction")}}</a> -->
+<!--         <a class="item" :class="{'active':activeIndex == 'introduction'}" href="##" @click="scrollTo('introduction')">{{$t("menu.introduction")}}</a>
+ --><!--         <a class="item" :class="{'active':activeIndex == 'about'}" href="javascript:;" @click="scrollTo('about')">{{$t("menu.about")}}</a>
         <a class="item" :class="{'active':activeIndex == 'gala'}" href="javascript:;" @click="scrollTo('gala')">{{$t("menu.gala")}}</a>
-        <a class="item" :class="{'active':activeIndex == 'feature'}" href="javascript:;" @click="scrollTo('feature')">{{$t("menu.feature")}}</a>
+        <a class="item" :class="{'active':activeIndex == 'feature'}" href="javascript:;" @click="scrollTo('feature')">{{$t("menu.feature")}}</a> -->
         <a class="item" :class="{'active':activeIndex == 'faq'}" @click="scrollTo('faq')" >{{$t("menu.faq")}}</a>
         <!-- <a class="item" href="http://arting365.com/galaxy/ticket" target="_blank">{{$t("menu.roadshow")}}</a> -->
         <a class="item" :class="{'active':activeIndex == 'quick'}" @click="scrollTo('quick')" >{{$t("menu.quick")}}</a>
@@ -69,12 +74,34 @@ export default {
   },
   methods: {
     scrollTo(anchor) {
-      //this.activeIndex = anchor;
+      if(this.activeIndex == anchor) return;
+      this.activeIndex = anchor;
       
       // document.querySelector(`#${anchor}`).scrollIntoView({
         // behavior: "smooth"
       // });
       switch(anchor){
+        case 'home':
+          //this.$router.push({path:'/'});
+          this.$emit("setMenu",1);
+          break;
+        case 'about-us':
+          this.$emit("setMenu",2);
+          //this.$router.push({path:'/AboutUs'});
+          break;
+        case 'market-place':
+          this.$emit("setMenu",3);
+          //this.$router.push({path:'/MarketPlace'});
+          //location.href="/MarketPlace";
+          break;
+        case 'community':
+          this.$emit("setMenu",4);
+          //this.$router.push({path:'/Community'});
+          break;
+        case 'introduction':
+          this.$emit("setMenu",5);
+          //this.$router.push({path:'/Introduction'});
+          break;
         case 'faq':
           window.open('https://medium.com/@zeepin/crypto-galaxy-faq-2c47a6ed5310');
           break;
@@ -82,7 +109,7 @@ export default {
           window.open('https://xzusd.com/payment');
           break;
         default:
-        location.hash = `#${anchor}`;
+        //location.hash = `#${anchor}`;
       }
     },
     openMenu() {
@@ -105,7 +132,7 @@ export default {
 @media only screen and (min-width: 1280px) {
   .menu {
     position: absolute;
-    top: 60px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     width: 1200px;
@@ -145,7 +172,7 @@ export default {
     border:none;
   }
   .menu .nav .item {
-    margin-left: 60px;
+    margin-left: 36px;
   }
   .menu .i18n {
     display: flex;

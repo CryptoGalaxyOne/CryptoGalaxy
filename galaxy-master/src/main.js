@@ -10,10 +10,18 @@ import "@/assets/css/common.less";
 
 Vue.config.productionTip = false
 
+//Element-UI
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI)
  
+//vuex
+import store from './store'
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   i18n,
 }).$mount('#app');

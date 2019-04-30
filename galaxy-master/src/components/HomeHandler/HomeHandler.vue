@@ -1,14 +1,16 @@
 <template>
 
   <div class="wrapper">
-    <Menu />
-    <Banner />
-    <About />
-    <Sell />
-    <System />
-    <Dashboard />
-    <Feature />
-    <Partner />
+    <Menu @setMenu="setMenu"/>
+    <Banner v-if="menuIndex==1"/>
+    <About  v-if="menuIndex==1"  @setMenu="setMenu" />
+    <Sell  v-if="menuIndex==1"/>
+    <System  v-if="menuIndex==1"/>
+    <Dashboard  v-if="menuIndex==1"/>
+    <Feature  v-if="menuIndex==1"/>
+    <Partner  v-if="menuIndex==1"/>
+    <MarketPlace v-if="menuIndex==3"/>
+    <AboutCG v-if="menuIndex==2"/>
     <Footer />
   </div>
 
@@ -33,9 +35,17 @@ import Feature from "./modules/feature";
 import Apply from "./modules/apply";
 import Partner from "./modules/partner";
 import Footer from "./modules/footer";
-
+//market place
+import MarketPlace from "./modules/marketPlace";
+//about CG
+import AboutCG from "./modules/aboutCG";
 export default {
   name: "home",
+  data(){
+    return{
+      menuIndex:1, //1:home  2: about CG 3:market place  4:community 5:introduction
+    }
+  },
   components: {
     Menu,
     Banner,
@@ -46,14 +56,21 @@ export default {
     Feature,
     Apply,
     Partner,
-    Footer
+    Footer,
+    MarketPlace,
+    AboutCG
   },
-  beforeRouteEnter(to, from, next) {
+  /* beforeRouteEnter(to, from, next) {
     let router = getQuery('router');
     if(router){
       location.href = `?/#${router}`;
     }else{
       next();
+    }
+  }, */
+  methods:{
+    setMenu(index){
+      this.menuIndex = index;
     }
   }
 };

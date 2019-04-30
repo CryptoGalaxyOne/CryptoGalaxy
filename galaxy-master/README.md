@@ -12,6 +12,11 @@
 
 4. npm install 安装项目依赖组建
 
+//新增依赖
+cnpm install element-ui --save
+cnpm install vuex --save
+cnpm install --save axios vue-axios
+
 5. npm run dev 启动开发环境（前面的步骤只需要完成一次就好）
 
 6. 这时候打开浏览器，输入 localhost:8080 就可以看到页面了

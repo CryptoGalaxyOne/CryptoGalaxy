@@ -9,9 +9,11 @@ import DownloadHandler from '@/components/DownloadHandler/index.js';
 import PrivacyPolicy from '@/components/PrivacyPolicy/index.js';
 import TermsOfUse from '@/components/TermsOfUse/index.js';
 
+
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   routes: [{
     path: '/',
     name: 'home',
@@ -20,7 +22,7 @@ export default new Router({
     path: '/invite/:code',
     name: 'invite',
     component: InviteHandler
-  }, , {
+  }, {
     path: '/sc/:code/:type/:screenshot?',
     name: 'sharecard',
     component: ShareCardHandler

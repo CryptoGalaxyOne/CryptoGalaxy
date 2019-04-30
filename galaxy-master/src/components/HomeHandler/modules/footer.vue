@@ -11,8 +11,8 @@
     <div class="link">
       <a href="##">About Galaxy</a>
       <a href="##">Blog</a>
-      <a href="/#/TermsOfUse" target="_blank">Terms of use</a>
-      <a href="/#/PrivacyPolicy" target="_blank">Privacy policy</a>
+      <a href="/TermsOfUse" target="_blank">{{$t("marketPlace.text9")}}</a>
+      <a href="/PrivacyPolicy" target="_blank">{{$t("marketPlace.text11")}}</a>
     </div>
     <div class="copyright">Copyright © 2018 Galaxy.One All rights reserved.</div>
   </div>

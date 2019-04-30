@@ -7,36 +7,40 @@
     "meetup": "PETITION",
     "roadshow": "ROADSHOW",
     "faq": "FAQ",
-    "quick":"Quick Deposit"
+    "quick":"Quick Deposit",
+    "about-us":"ABOUT CG",
+    "market-place":"Market Place",
+    "community":"Community",
+    "introduction":"Introduction"
   },
   "banner": {
-    "title": "Discover & collect your planet",
-    "subtitle": "Based on Blockchain",
+    "title": "The first space-themed blockchain-powered mobile game",
+    "subtitle": "",
     "mobile-subtitle": "The first ever virtual universe based on blockchain",
     "getsoon": "Coming soon",
     "ios": "iOS",
     "googlePlay": "Google Play",
     "android": "Android",
-    "text":"For IOS users: We will upload new IPA for you to install soon and the name will change into CryptoGalaxy. The previous version will stop working after 4：00PM（UTC）,April 25. Please kindly backup the keystore or private key you use to access the game in advance and make sure you download the updated version."
+    "text":"For CG V 2.0.6 upgrade, the server will be shut down for 6~8 hours from 2:00 UTC. Please back up your keys.Thank you for your understanding."
   },
   "about": {
     "title": "What is CryptoGalaxy ?",
-    "des": "CryptoGalaxy, a virtual universe powered by blockchain, is also an entertainment decentralized application that will run under the Zeepin Chain. Anyone can purchase a planet and name it at his or her wish. Each planet will have a unique set of attributes and characteristics. More surprises to come in the near future. You will be able to make transactions and explore and even more fun and adventurous journey on your planet.",
+    "des": "The world's first virtual universe powered by blockchain, which runs on top of Zeepin Chain. It combines what a playable and profitable blockchain game has to fundamentally offer. Each planet is unique that you can give it a name and make transantions with other players. Find a planet, name it and trade it.",
     "video-label": "Watch intro video",
     "tips-before": "CryptoGalaxy is coming up soon, but the first batch of planets available to users will be quite limited—only",
     "tips-after": "planets will be released .",
     "cards": [{
-      "label": "An Explorer on a Brand-new Planet",
-      "value": "Each player will switch to be an explorer to discover his own planet once entering into the game."
+      "label": "Explore planets",
+      "value": "You are now an explorer who can get started to find your own planet."
     }, {
-      "label": "Mysterious Mineral",
-      "value": "Each planet is in possession of mysterious mineral for you to discover! The mysterious mineral can be converted into Gala as well."
+      "label": "GalaBots",
+      "value": "Minerals are varied with GalaBots.You can buy&sell your GalaBots through DEX."
     }, {
-      "label": "Digital Galaxy Assets",
-      "value": "Each planet is unique, which can be understood as digital assets owned by you on blockchain."
+      "label": "Rich in minerals",
+      "value": "Each planet is packed full of various minerals for you to explore！Not just being playable, it's profitable as well since all minerals can be converted into Gala and ZUSD on DEX."
     }, {
-      "label": "Discovery on Galaxy",
-      "value": "If you are a big fan of adventure, you will be more than thrilled to have great odds of establishing your own Galaxy territory."
+      "label": "Elf system",
+      "value": "The universe is home to a tribe of elfs to amaze you with their magic power, but you have to be keen on training of them first!"
     }]
   },
   "sell": {
@@ -74,5 +78,35 @@
   },
   "footer": {
 
+  },
+  "marketPlace":{
+    "text":"Average trading price/7 days",
+    "text1":"Unfold",
+    "text2":"Assets",
+    "text3":"Hash",
+    "text4":"From",
+    "text5":"To",
+    "text6":"Created",
+    "text7":"ID/Amount",
+    "text8":"I have read and accepted the",
+    "text9":"Terms of use",
+    "text10":"and",
+    "text11":"Privacy policy",
+    "text12":"Galaxy trading index",
+    "text13":"Explore the space filled with a range of assets, you can earn more by upgrade:",
+    "text14":"Galaxy DEX-in-game trading marketplace",
+    "text15":"GalaBots,planets、minerals,elfs...",
+    "text16":"All in-game assets can be traded here",
+    "text17":"Players from all over the world are gathered here and ready to represent their country in a race for honor",
+    "text18":"Small investment brings you steady growing return",
+    "text19":"Safe trading system enables light-speed transations",
+    "text20":"CryptoGalaxy is a virtual world powered by blockchain which mirrors the true meaning of blockchain game. It allows all data to run on top of a decentralized public chain catered to creative and entertainment industries-Zeepin Chain. All in-game assets including planets, GalaBots and cystals are made on-chain in a bid to create a world of democracy,fairness and transparency. As each asset has its own unique harsh code, you can check up your assets via {link}. Start your fun-filled journey to space exploration now！",
+    "text21":"Unlike the vast majority of blockchain games which stay afloat by aggressive promotion and speculation, CryptoGalaxy focuses on how the underlying technology of blockchain can be maximally applied in games without any compromise in playability.",
+    "text22":"In-game non-fungible assets include:",
+    "text23":"Planets",
+    "text24":"GalaBots/mining robots",
+    "text25":"Minerals",
+    "text26":"DEX",
+    "text27":"How to get CG assets"
   }
 }

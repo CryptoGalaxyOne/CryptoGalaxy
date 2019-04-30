@@ -47,6 +47,12 @@
            
           <a href="http://cdn.zeepin.io/cryptogalaxy/CryptoGalaxy2.0.5.apk" class="download-android">{{$t("banner.android")}}</a>
         </div>
+        <div class="countdown-protocol">
+          <p>{{$t("marketPlace.text8")}}</p>
+          <p><a href="/TermsOfUse">{{$t("marketPlace.text9")}}</a></p>
+          <p>{{$t("marketPlace.text10")}}</p>
+          <p><a href="/PrivacyPolicy">{{$t("marketPlace.text11")}}</a></p>
+        </div>
       </div>
       <img class="vision" src="@/assets/img/vision.png" alt="">
     </div>
@@ -150,6 +156,7 @@ export default {
     top: 42%;
     left: 0;
     transform: translateY(-50%);
+    max-width:600px;
   }
   .banner .main .copywriting .countdown {
     width: 360px;
@@ -178,6 +185,22 @@ export default {
       }
     }
   }
+ .countdown-protocol{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   .countdown-protocol p{
+     font-size: 14px;
+     color:#fff;
+   }
+   .countdown-protocol p >a{
+     margin-left:10px;
+     margin-right:10px;
+     cursor: pointer;
+     color:#70fec3;
+   }
   .banner .main .copywriting .links {
     // margin-top: 81px;
     display: flex;
@@ -215,7 +238,7 @@ export default {
   }
   .banner .main .copywriting .slogan {
     font-weight: 500;
-    font-size: 42px;
+    font-size: 36px;
     color: #fff;
     line-height: 1.2;
   }
@@ -279,6 +302,7 @@ export default {
     position: absolute;
     top: 42%;
     left: 0;
+    max-width:600/@rem;
     transform: translateY(-50%);
   }
   .banner .main .copywriting .countdown {
@@ -312,7 +336,7 @@ export default {
     // margin-top: 81/@rem;
     display: flex;
     justify-content: space-between;
-    width: 360/@rem;
+    width: 600/@rem;
   }
   .banner .main .copywriting .links a {
     display: block;
@@ -323,6 +347,7 @@ export default {
     text-align: center;
     font-weight: 500;
     font-size: 20/@rem;
+    margin-left:20/@rem;
   }
   .banner .main .copywriting .links a.invite {
     color: rgba(80, 104, 227, 1);
@@ -353,6 +378,50 @@ export default {
     top: 50%;
     right: -36/@rem;
     transform: translateY(-50%);
+  }
+   .countdown-protocol{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   .countdown-protocol p{
+     font-size: 14px;
+     color:#fff;
+   }
+   .countdown-protocol p >a{
+     margin-left:10px;
+     margin-right:10px;
+     cursor: pointer;
+     color:#70fec3;
+   }
+   .banner .main .c-announcement{
+    width: 58%;
+    position:absolute;
+    height:40px;
+    background: rgba(0, 0, 0, 0.5) url( '@{imgPath}/cement.png') 20px center  no-repeat;
+    background-size:auto 60%;
+    z-index: 999;
+    top:20px;
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+  }
+  .banner .main .c-announcement .c-announcement-cent{
+    flex:1;
+    line-height: 30px;
+    padding:5px 10px 5px 60px;
+    color:#fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
+  .banner .main .c-announcement .c-announcement-close{
+    display: block;
+    width:40px;
+    background: url( '@{imgPath}/colse.png') center center  no-repeat;
+    background-size:auto 30% ;
+    cursor: pointer;
   }
 }
 
@@ -488,5 +557,22 @@ export default {
     background-size:auto 30% ;
     cursor: pointer;
   }
+   .countdown-protocol{
+    width: 90%;
+    margin:auto;
+    margin-top:20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+   .countdown-protocol p{
+     font-size: 12px;
+     color:#fff;
+   }
+   .countdown-protocol p >a{
+     margin-left:10px;
+     margin-right:10px;
+     cursor: pointer;
+     color:#70fec3;
+   }
 }
 </style>
