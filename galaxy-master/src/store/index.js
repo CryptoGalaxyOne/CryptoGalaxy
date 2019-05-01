@@ -29,7 +29,7 @@ export default new Vuex.Store({
       
       getRefprice({state,commit}){
           axios({
-             url:"https://52.15.77.2/api/cg/trademarket/refprice",
+             url:"https://cryptogalaxy.one/api/cg/trademarket/refprice",
              methods:'get', 
           }).then(function(response){
               if(response.data.code == 1){
