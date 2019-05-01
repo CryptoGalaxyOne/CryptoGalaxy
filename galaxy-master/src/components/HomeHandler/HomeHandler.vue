@@ -11,7 +11,7 @@
     <Partner  v-if="menuIndex==1"/>
     <MarketPlace v-if="menuIndex==3"/>
     <AboutCG v-if="menuIndex==2"/>
-    <Footer />
+    <Footer @setMenu="setMenu"/>
   </div>
 
 </template>

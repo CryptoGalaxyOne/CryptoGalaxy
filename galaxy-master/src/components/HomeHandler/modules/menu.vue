@@ -4,9 +4,9 @@
       <a href="##" class="logo">galaxy</a>
       <div hidden-in-lg class="trigger" @click="openMenu"></div>
       <nav class="nav" :class="{open: trigger}" @click="closeMenu">
-        <a class="item" :class="{'active':activeIndex == 'home'}" href="/" @click="scrollTo('home')">{{$t("menu.home")}}</a>
-        <a class="item" :class="{'active':activeIndex == 'about'}" href="/about" @click="scrollTo('about')">{{$t("menu.about-us")}}</a>
-        <a class="item" :class="{'active':activeIndex == 'market-place'}" href="/market-place" @click="scrollTo('market-place')">{{$t("menu.market-place")}}</a>
+        <a class="item" :class="{'active':activeIndex == 'home'}"  @click="scrollTo('home')">{{$t("menu.home")}}</a>
+        <a class="item" :class="{'active':activeIndex == 'about'}"  @click="scrollTo('about')">{{$t("menu.about-us")}}</a>
+        <a class="item" :class="{'active':activeIndex == 'market-place'}"  @click="scrollTo('market-place')">{{$t("menu.market-place")}}</a>
     <!--     <a class="item" :class="{'active':activeIndex == 'community'}" href="##" @click="scrollTo('community')">{{$t("menu.community")}}</a>
         <a class="item" :class="{'active':activeIndex == 'introduction'}" href="##" @click="scrollTo('introduction')">{{$t("menu.introduction")}}</a> -->
 <!--         <a class="item" :class="{'active':activeIndex == 'introduction'}" href="##" @click="scrollTo('introduction')">{{$t("menu.introduction")}}</a>
@@ -55,8 +55,8 @@ export default {
   watch:{
    '$route.path':function(newVal,oldVal){
     //console.log(newVal);
-     let str = newVal.substring(1);
-      this.scrollTo(str);
+     let str = newVal.substring(2);
+      //this.scrollTo(str);
    }
   },
   mounted() {
@@ -83,8 +83,8 @@ export default {
     }
     let path = this.$route.path || "";
     if(path){
-      let str = path.substring(1);
-      this.scrollTo(str);
+      //let str = path.substring(2);
+     // this.scrollTo(str);
     } 
   },
   methods: {
