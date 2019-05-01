@@ -41,7 +41,7 @@
           <a href="##" class="getsoon">{{$t("banner.getsoon")}}</a>
         </div>
         <div class="links" v-if="timesup === 1">
-          <a href="https://cryptogalaxy.one/#/ios" class="download-android">{{$t("banner.ios")}}</a>
+          <a href="/ios" class="download-android">{{$t("banner.ios")}}</a>
       
          <!--  <a href="https://play.google.com/store/apps/details?id=com.zeepin.CryptoGalaxy" target="_blank" class="download-android">{{$t("banner.googlePlay")}}</a> -->
            
@@ -82,7 +82,7 @@ export default {
       m: 0,
       s: 0,
       timesup: 0,
-      isAnnouncement:'1'
+      isAnnouncement:'2'
     };
   },
   computed: {
