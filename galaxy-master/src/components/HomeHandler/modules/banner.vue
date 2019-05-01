@@ -41,7 +41,7 @@
           <a href="##" class="getsoon">{{$t("banner.getsoon")}}</a>
         </div>
         <div class="links" v-if="timesup === 1">
-          <a href="/ios" class="download-android">{{$t("banner.ios")}}</a>
+          <a href="/#/ios" class="download-android">{{$t("banner.ios")}}</a>
       
          <!--  <a href="https://play.google.com/store/apps/details?id=com.zeepin.CryptoGalaxy" target="_blank" class="download-android">{{$t("banner.googlePlay")}}</a> -->
            
@@ -128,6 +128,9 @@ export default {
     closeAnnouncement(){
       this.isAnnouncement = '2';
       sessionStorage.setItem('announcement',this.isAnnouncement);
+    },
+    toIos(){
+      this.$router.push({path:'/ios'});
     }
   }
 };
