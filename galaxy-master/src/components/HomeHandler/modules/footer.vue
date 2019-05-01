@@ -9,8 +9,8 @@
       <a class="reddit" target="_blank" href="https://www.reddit.com/r/ZEEPIN/"></a>
     </div>
     <div class="link">
-      <a href="##">About Galaxy</a>
-      <a href="##">Blog</a>
+      <a href="/about">About Galaxy</a>
+     <!--  <a href="##">Blog</a> -->
       <a href="/TermsOfUse" target="_blank">{{$t("marketPlace.text9")}}</a>
       <a href="/PrivacyPolicy" target="_blank">{{$t("marketPlace.text11")}}</a>
     </div>

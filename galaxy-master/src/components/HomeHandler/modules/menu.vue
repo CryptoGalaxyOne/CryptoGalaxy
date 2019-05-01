@@ -4,9 +4,9 @@
       <a href="##" class="logo">galaxy</a>
       <div hidden-in-lg class="trigger" @click="openMenu"></div>
       <nav class="nav" :class="{open: trigger}" @click="closeMenu">
-        <a class="item" :class="{'active':activeIndex == 'home'}" href="##" @click="scrollTo('home')">{{$t("menu.home")}}</a>
-        <a class="item" :class="{'active':activeIndex == 'about-us'}" href="##" @click="scrollTo('about-us')">{{$t("menu.about-us")}}</a>
-        <a class="item" :class="{'active':activeIndex == 'market-place'}" href="##" @click="scrollTo('market-place')">{{$t("menu.market-place")}}</a>
+        <a class="item" :class="{'active':activeIndex == 'home'}" href="/" @click="scrollTo('home')">{{$t("menu.home")}}</a>
+        <a class="item" :class="{'active':activeIndex == 'about'}" href="/about" @click="scrollTo('about')">{{$t("menu.about-us")}}</a>
+        <a class="item" :class="{'active':activeIndex == 'market-place'}" href="/market-place" @click="scrollTo('market-place')">{{$t("menu.market-place")}}</a>
     <!--     <a class="item" :class="{'active':activeIndex == 'community'}" href="##" @click="scrollTo('community')">{{$t("menu.community")}}</a>
         <a class="item" :class="{'active':activeIndex == 'introduction'}" href="##" @click="scrollTo('introduction')">{{$t("menu.introduction")}}</a> -->
 <!--         <a class="item" :class="{'active':activeIndex == 'introduction'}" href="##" @click="scrollTo('introduction')">{{$t("menu.introduction")}}</a>
@@ -52,6 +52,13 @@ export default {
       activeIndex:'home',
     };
   },
+  watch:{
+   '$route.path':function(newVal,oldVal){
+    //console.log(newVal);
+     let str = newVal.substring(1);
+      this.scrollTo(str);
+   }
+  },
   mounted() {
     document.querySelector(".i18n").addEventListener("mouseenter", () => {
       if (document.documentElement.getBoundingClientRect().width <= 1024) {
@@ -71,6 +78,14 @@ export default {
         document.querySelector(".i18n .icons").style.display = "none";
       }, 500);
     });
+    if(this.activeIndexData){
+      this.activeIndex = this.activeIndexData;
+    }
+    let path = this.$route.path || "";
+    if(path){
+      let str = path.substring(1);
+      this.scrollTo(str);
+    } 
   },
   methods: {
     scrollTo(anchor) {
@@ -85,14 +100,13 @@ export default {
           //this.$router.push({path:'/'});
           this.$emit("setMenu",1);
           break;
-        case 'about-us':
+        case 'about':
           this.$emit("setMenu",2);
-          //this.$router.push({path:'/AboutUs'});
+          //this.$router.push({path:'/about'});
           break;
         case 'market-place':
           this.$emit("setMenu",3);
-          //this.$router.push({path:'/MarketPlace'});
-          //location.href="/MarketPlace";
+          //this.$router.push({path:'/market-place'});
           break;
         case 'community':
           this.$emit("setMenu",4);
@@ -110,6 +124,8 @@ export default {
           break;
         default:
         //location.hash = `#${anchor}`;
+        this.activeIndex = 'home';
+        this.$emit("setMenu",1);
       }
     },
     openMenu() {
@@ -122,7 +138,7 @@ export default {
     },
     i18n(lan) {
       window.location.href = `?lan=${lan}`;
-    }
+    },
   }
 };
 </script>

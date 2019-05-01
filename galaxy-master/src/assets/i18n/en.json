@@ -8,7 +8,7 @@
     "roadshow": "ROADSHOW",
     "faq": "FAQ",
     "quick":"Quick Deposit",
-    "about-us":"ABOUT CG",
+    "about-us":"About CG",
     "market-place":"Market Place",
     "community":"Community",
     "introduction":"Introduction"
@@ -80,7 +80,7 @@
 
   },
   "marketPlace":{
-    "text":"Average trading price/7 days",
+    "text":"Galaxy trading index/7 days",
     "text1":"Unfold",
     "text2":"Assets",
     "text3":"Hash",
@@ -100,7 +100,7 @@
     "text17":"Players from all over the world are gathered here and ready to represent their country in a race for honor",
     "text18":"Small investment brings you steady growing return",
     "text19":"Safe trading system enables light-speed transations",
-    "text20":"CryptoGalaxy is a virtual world powered by blockchain which mirrors the true meaning of blockchain game. It allows all data to run on top of a decentralized public chain catered to creative and entertainment industries-Zeepin Chain. All in-game assets including planets, GalaBots and cystals are made on-chain in a bid to create a world of democracy,fairness and transparency. As each asset has its own unique harsh code, you can check up your assets via {link}. Start your fun-filled journey to space exploration now！",
+    "text20":"CryptoGalaxy is a virtual world powered by blockchain which mirrors the true meaning of blockchain game. It allows all data to run on top of a decentralized public chain catered to creative and entertainment industries-Zeepin Chain. All in-game assets including planets, GalaBots and crystals are made on-chain in a bid to create a world of democracy,fairness and transparency. As each asset has its own unique harsh code, you can check up your assets via {link}. Start your fun-filled journey to space exploration now！",
     "text21":"Unlike the vast majority of blockchain games which stay afloat by aggressive promotion and speculation, CryptoGalaxy focuses on how the underlying technology of blockchain can be maximally applied in games without any compromise in playability.",
     "text22":"In-game non-fungible assets include:",
     "text23":"Planets",

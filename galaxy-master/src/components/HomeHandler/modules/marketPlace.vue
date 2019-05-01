@@ -365,7 +365,7 @@ export default {
           color: #fff;
         }
         .el-pagination.is-background .el-pager li.active{
-          background: #b0d5ff;
+          background: rgba(176, 213, 255, 0.4);
           color: #fff;
         }
         .btn-prev{
