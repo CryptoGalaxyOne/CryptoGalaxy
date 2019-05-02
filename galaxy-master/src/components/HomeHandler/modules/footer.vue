@@ -11,15 +11,17 @@
     <div class="link">
       <a  @click="$emit('setMenu',2)">About Galaxy</a>
      <!--  <a href="##">Blog</a> -->
-      <a href="/TermsOfUse" target="_blank">{{$t("marketPlace.text9")}}</a>
-      <a href="/PrivacyPolicy" target="_blank">{{$t("marketPlace.text11")}}</a>
+      <a href="/#/TermsOfUse" target="_blank">{{$t("marketPlace.text9")}}</a>
+      <a href="/#/PrivacyPolicy" target="_blank">{{$t("marketPlace.text11")}}</a>
     </div>
     <div class="copyright">Copyright © 2018 Galaxy.One All rights reserved.</div>
   </div>
   <!-- footer end -->
 </template>
 <script>
-export default {};
+export default {
+  
+};
 </script>
 <style lang="less" scoped>
 @imgPath: "../../../assets/img";
@@ -73,6 +75,7 @@ export default {};
     border-right: 1px solid #c3baff;
     padding-left: 20px;
     padding-right: 20px;
+    cursor: pointer;
   }
   .footer .link a:last-child {
     border-right: none;

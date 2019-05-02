@@ -41,7 +41,7 @@
           <a href="##" class="getsoon">{{$t("banner.getsoon")}}</a>
         </div>
         <div class="links" v-if="timesup === 1">
-          <a href="/#/ios" class="download-android">{{$t("banner.ios")}}</a>
+          <a href="/#/ios" target="_blank" class="download-android">{{$t("banner.ios")}}</a>
       
          <!--  <a href="https://play.google.com/store/apps/details?id=com.zeepin.CryptoGalaxy" target="_blank" class="download-android">{{$t("banner.googlePlay")}}</a> -->
            
@@ -49,9 +49,9 @@
         </div>
         <div class="countdown-protocol">
           <p>{{$t("marketPlace.text8")}}</p>
-          <p><a href="/TermsOfUse">{{$t("marketPlace.text9")}}</a></p>
+          <p><a href="/#/TermsOfUse" target="_blank">{{$t("marketPlace.text9")}}</a></p>
           <p>{{$t("marketPlace.text10")}}</p>
-          <p><a href="/PrivacyPolicy">{{$t("marketPlace.text11")}}</a></p>
+          <p><a href="/#/PrivacyPolicy" target="_blank">{{$t("marketPlace.text11")}}</a></p>
         </div>
       </div>
       <img class="vision" src="@/assets/img/vision.png" alt="">
