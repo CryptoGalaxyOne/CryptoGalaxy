@@ -35,24 +35,28 @@
             <div class="loge-img">
               <img :src="'/static/img/icon/'+itme.name+'.png'" alt>
             </div>
-            <p class="name">{{itme.name}}</p>
+          <!--   <p class="name">{{itme.name}}</p> -->
           </div>
           <div class="assets-box">
             <div class="center">
               <div class="asstes">
-                <div class="loge-img">
-                  <img src="/static/img/icon/Gala.png" alt>
-                </div>
-                <p>{{(itme.gala).toFixed(4)}}</p>
+                <p class="name">{{itme.name}}</p>
                 <!-- <span>Gala</span> -->
               </div>
               <div class="asstes">
+                <p>{{(itme.gala).toFixed(4)}}</p>
+                <div class="loge-img">
+                  <img src="/static/img/icon/Gala.png" alt>
+                </div>
+                <!-- <span>Gala</span> -->
+              </div>
+             <!--  <div class="asstes">
                 <div class="loge-img">
                   <img src="/static/img/icon/ZUSD.png" alt>
                 </div>
                 <p>{{(itme.zusd).toFixed(2)}}</p>
-                <!--  <span>ZUSD</span> -->
-              </div>
+                  <span>ZUSD</span> 
+              </div> -->
             </div>
           </div>
         </div>
@@ -406,7 +410,7 @@ export default {
         .name {
           width: 100%;
           font-size: 14px;
-          color: rgba(176, 213, 255, 0.3);
+          color: rgba(176, 213, 255, 0.5);
           text-align: center;
         }
       }
@@ -416,30 +420,35 @@ export default {
         justify-content: center;
         align-items: center;
         .center {
-          margin-left: 15px;
+          margin-left: 0px;
           .asstes {
             display: flex;
             /*   height: 40px; */
             .loge-img {
-              width: 20px;
+              width: 16px;
               display: flex;
               justify-content: center;
               align-items: center;
+              margin-left:10px;
               img {
                 width: 100%;
               }
             }
             p {
-              margin-left: 10px;
+              /* margin-left: 10px; */
               font-size: 16px;
               color: #b0d5ff;
-              line-height: 30px;
+              line-height: 1.5;
             }
             span {
               display: block;
               margin-left: 10px;
               color: rgba(176, 213, 255, 0.3);
               line-height: 30px;
+            }
+            .name{
+              font-size: 12px;
+              color:#5068E3;
             }
           }
         }
@@ -707,30 +716,35 @@ export default {
         justify-content: center;
         align-items: center;
         .center {
-          margin-left: 15px;
+          margin-left: 0px;
           .asstes {
             display: flex;
             /*   height: 40px; */
             .loge-img {
-              width: 20px;
+              width: 16px;
               display: flex;
               justify-content: center;
               align-items: center;
+              margin-left:6px;
               img {
                 width: 100%;
               }
             }
             p {
-              margin-left: 10px;
-              font-size: 16px;
+              /* margin-left: 10px; */
+              font-size: 14px;
               color: #b0d5ff;
-              line-height: 30px;
+              line-height: 1.5;
             }
             span {
               display: block;
               margin-left: 10px;
               color: rgba(176, 213, 255, 0.3);
               line-height: 30px;
+            }
+             .name{
+              font-size: 12px;
+              color:#5068E3;
             }
           }
         }
@@ -1004,30 +1018,35 @@ export default {
         justify-content: center;
         align-items: center;
         .center {
-          margin-left: 15px;
+          margin-left: 0px;
           .asstes {
             display: flex;
             /*   height: 40px; */
             .loge-img {
-              width: 20px;
+              width: 16px;
               display: flex;
               justify-content: center;
               align-items: center;
+              margin-left:10px;
               img {
                 width: 100%;
               }
             }
             p {
-              margin-left: 10px;
+             /*  margin-left: 10px; */
               font-size: 14px;
               color: #b0d5ff;
-              line-height: 30px;
+              line-height: 1.5;
             }
             span {
               display: block;
               margin-left: 10px;
               color: rgba(176, 213, 255, 0.3);
               line-height: 30px;
+            }
+            .name{
+              font-size: 12px;
+              color:#5068E3;
             }
           }
         }
