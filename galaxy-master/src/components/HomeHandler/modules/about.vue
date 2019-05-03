@@ -158,10 +158,12 @@ export default {
       bannerListCn:[
         {url:'/static/img/icon/banner-01.png'},
         {url:'/static/img/icon/banner-02.jpg'},
+        {url:'/static/img/icon/banner-03.jpg'},
       ],
       bannerListEn:[
         {url:'/static/img/icon/banner-en-01.jpg'},
         {url:'/static/img/icon/banner-en-02.jpg'},
+        {url:'/static/img/icon/banner-en-03.jpg'},
       ],
 
     };
