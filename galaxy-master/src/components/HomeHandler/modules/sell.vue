@@ -45,7 +45,7 @@ export default {
           value: this.$t("sell.steps[1].value")
         },
         {
-          src: "/static/img/icon_crptg.svg",
+          src: "/static/img/icon/Gala.png",
           label: this.$t("sell.steps[2].label"),
           value: this.$t("sell.steps[2].value")
         },

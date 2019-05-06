@@ -191,8 +191,9 @@ export default {
  .countdown-protocol{
     margin-top:20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+   /* justify-content: center;
+    align-items: center; */
+    margin-left:6%;
   }
    .countdown-protocol p{
      font-size: 14px;
@@ -338,7 +339,7 @@ export default {
   .banner .main .copywriting .links {
     // margin-top: 81/@rem;
     display: flex;
-    justify-content: space-between;
+/*     justify-content: space-between; */
     width: 600/@rem;
   }
   .banner .main .copywriting .links a {
@@ -385,8 +386,9 @@ export default {
    .countdown-protocol{
     margin-top:20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
+    margin-left:0;
   }
    .countdown-protocol p{
      font-size: 14px;
