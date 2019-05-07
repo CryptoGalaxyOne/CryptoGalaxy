@@ -9,7 +9,7 @@
     "faq": "FAQ",
     "quick":"Quick Deposit",
     "about-us":"About CG",
-    "market-place":"Market Place",
+    "market-place":"Marketplace",
     "community":"Community",
     "introduction":"Introduction"
   },
@@ -21,20 +21,20 @@
     "ios": "IOS",
     "googlePlay": "Google Play",
     "android": "Android",
-    "text":"For IOS users: We will upload new IPA for you to install soon and the name will change into CryptoGalaxy. The previous version will stop working after 4：00PM（UTC）,April 25. Please kindly backup the keystore or private key you use to access the game in advance and make sure you download the updated version."
+    "text":"For IOS users: We will upload new IPA for you to install soon and the name will change into CryptoGalaxy. The previous version will stop working after 4：00PM（UTC）,April 25. Please kindly backup the keystore or private key you use to access the game in advance and make sure you download the latest version."
   },
   "about": {
     "title": "What is CryptoGalaxy ?",
     "des": "The world's first virtual universe powered by blockchain, which runs on top of Zeepin Chain. It combines what a playable and profitable blockchain game has to fundamentally offer. Each planet is unique that you can give it a name and make transantions with other players. Find a planet, name it and trade it.",
     "video-label": "Watch intro video",
-    "tips-before": "CryptoGalaxy is coming up soon, but the first batch of planets available to users will be quite limited—only",
+    "tips-before": "CryptoGalaxy is coming up soon, but the first batch of planets available to users will be quite limited",
     "tips-after": "planets will be released .",
     "cards": [{
       "label": "Explore planets",
       "value": "You are now an explorer who can get started to find your own planet."
     }, {
-      "label": "GalaBots",
-      "value": "Minerals are varied with GalaBots.You can buy&sell your GalaBots through DEX."
+      "label": "Robots",
+      "value": "Minerals are varied with robots.You can buy&sell your robots through DEX."
     }, {
       "label": "Rich in minerals",
       "value": "Each planet is packed full of various minerals for you to explore！Not just being playable, it's profitable as well since all minerals can be converted into Gala and ZUSD on DEX."
@@ -45,7 +45,7 @@
   },
   "sell": {
     "title": "How can you get Gala?",
-    "des": "Gala has been developed to serve the whole Galaxy as a utility token that will set the price of any assets, tools available in the game. Good news is that you can get free Gala if you can accomplish certain tasks.",
+    "des": "Gala has been developed to serve the whole Galaxy as a utility token that will set the price of any assets, tools available in the game. Good news is that you can get free Gala by completing certain tasks or any of the following ways",
     "steps": [{
       "label": "STEP 01",
       "value": "Buy ZPT token from Exchanges"
@@ -83,7 +83,7 @@
     "text":"Average trading price/7 Days",
     "text1":"Unfold",
     "text2":"Assets",
-    "text3":"Hash",
+    "text3":"HASH",
     "text4":"From",
     "text5":"To",
     "text6":"Created",
@@ -93,7 +93,7 @@
     "text10":"and",
     "text11":"Privacy Policy",
     "text12":"Galaxy trading index",
-    "text13":"Explore the space filled with a range of assets, you can earn more by upgrades on :",
+    "text13":"Explore the space filled with a range of assets, your earnings will increase by upgrades on in-game tools:",
     "text14":"Galaxy DEX-An in-game trading marketplace",
     "text15":"GalaBots,planets、minerals,elfs...",
     "text16":"All in-game assets can be traded here",
