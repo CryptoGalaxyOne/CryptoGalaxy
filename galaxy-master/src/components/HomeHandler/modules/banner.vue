@@ -82,7 +82,7 @@ export default {
       m: 0,
       s: 0,
       timesup: 0,
-      isAnnouncement:'2'
+      isAnnouncement:'1'
     };
   },
   computed: {

@@ -21,7 +21,7 @@
     "ios": "IOS",
     "googlePlay": "Google Play",
     "android": "Android",
-    "text":"For IOS users: We will upload new IPA for you to install soon and the name will change into CryptoGalaxy. The previous version will stop working after 4：00PM（UTC）,April 25. Please kindly backup the keystore or private key you use to access the game in advance and make sure you download the latest version."
+    "text":"Dear Explorers, CG V 2.0.7 will be released tomorrow at 10:00 UTC, May 14. The server will be shut down for 6 hours from 4:00 UTC for this update. This update will overwrite the older version, please back up your keys in advance for the safety of your assets. Thank you for your understanding!"
   },
   "about": {
     "title": "What is CryptoGalaxy ?",
