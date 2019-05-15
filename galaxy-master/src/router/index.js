@@ -8,7 +8,7 @@ import DownloadHandler from '@/components/DownloadHandler/index.js';
 /* import NoticeHandler from '@/components/NoticeHandler/index.js'; */
 import PrivacyPolicy from '@/components/PrivacyPolicy/index.js';
 import TermsOfUse from '@/components/TermsOfUse/index.js';
-
+import TermsOfUseCN from '@/components/TermsOfUseCN/index.js';
 
 Vue.use(Router);
 
@@ -42,6 +42,10 @@ export default new Router({
     path: '/TermsOfUse',
     name: 'TermsOfUse',
     component: TermsOfUse
+  },{
+    path: '/TermsOfUseCN',
+    name: 'TermsOfUseCN',
+    component: TermsOfUseCN
   },{
     path: '*',
     name: 'home',

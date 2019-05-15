@@ -11,7 +11,8 @@
     <div class="link">
       <a  @click="$emit('setMenu',2)">About Galaxy</a>
      <!--  <a href="##">Blog</a> -->
-      <a href="/#/TermsOfUse" target="_blank">{{$t("marketPlace.text9")}}</a>
+      <a v-if="isI18n == 'en'" href="/#/TermsOfUse" target="_blank">{{$t("marketPlace.text9")}}</a>
+      <a v-if="isI18n == 'cn'" href="/#/TermsOfUseCN" target="_blank">{{$t("marketPlace.text9")}}</a>
       <a href="/#/PrivacyPolicy" target="_blank">{{$t("marketPlace.text11")}}</a>
     </div>
     <div class="copyright">Copyright © 2018 Galaxy.One All rights reserved.</div>
@@ -20,7 +21,14 @@
 </template>
 <script>
 export default {
-  
+  data(){
+    return{
+      isI18n:"en",
+    }
+  },
+  mounted(){
+    this.isI18n = this.$i18n.locale;
+  }
 };
 </script>
 <style lang="less" scoped>
