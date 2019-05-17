@@ -49,7 +49,8 @@
         </div>
         <div class="countdown-protocol">
           <p>{{$t("marketPlace.text8")}}</p>
-          <p><a href="/#/TermsOfUse" target="_blank">{{$t("marketPlace.text9")}}</a></p>
+          <p v-if="isI18n == 'en'"><a href="/#/TermsOfUse" target="_blank">{{$t("marketPlace.text9")}}</a></p>
+          <p v-if="isI18n == 'cn'"><a href="/#/TermsOfUseCN" target="_blank">{{$t("marketPlace.text9")}}</a></p>
           <p>{{$t("marketPlace.text10")}}</p>
           <p><a href="/#/PrivacyPolicy" target="_blank">{{$t("marketPlace.text11")}}</a></p>
         </div>
@@ -82,6 +83,7 @@ export default {
       m: 0,
       s: 0,
       timesup: 0,
+      isI18n:"en",
       isAnnouncement:'2'
     };
   },
@@ -106,6 +108,8 @@ export default {
     if(sessionStorage.getItem('announcement')){
       this.isAnnouncement = sessionStorage.getItem('announcement');
     }
+
+     this.isI18n = this.$i18n.locale;
   },
   methods: {
     countDown(deadLine, now, timeZone) {

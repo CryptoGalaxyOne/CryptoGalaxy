@@ -65,8 +65,8 @@
              <img :src="'/static/img/icon/'+itme.AssetName+'.png'" alt> 
             </div>
             <p class="p2" @click="toScan(itme.TxnHash)">{{getFormatHashAddress(itme.TxnHash)}}</p>
-            <p class="p3">{{itme.FromAddress}}</p>
-            <p class="p4">{{itme.ToAddress}}</p>
+            <p class="p3" @click="toAddress(itme.FromAddress)">{{itme.FromAddress}}</p>
+            <p class="p4" @click="toAddress(itme.ToAddress)">{{itme.ToAddress}}</p>
             <p class="p5">
               <span>{{setTimeFormat(itme.TxnTime)}}</span>
             </p>
@@ -177,7 +177,12 @@ export default {
     },
     toScan(hash){
       if(!hash) return;
-      let url = 'https://zeescan.io/transaction/'+hash;
+      let url = 'https://zeescan.io/transaction/'+hash+'?baseUrl=main';
+      window.open(url);
+    },
+    toAddress(adress){
+      if(!adress) return;
+      let url = 'https://zeescan.io/address/'+adress+'?baseUrl=main';
       window.open(url);
     }
   },
@@ -423,9 +428,11 @@ export default {
             }
             &.p3 {
               width: 28%;
+              cursor: pointer;
             }
             &.p4 {
               width: 28%;
+              cursor: pointer;
             }
             &.p5 {
               width: 10%;

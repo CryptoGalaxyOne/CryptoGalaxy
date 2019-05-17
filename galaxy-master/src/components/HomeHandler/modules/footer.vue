@@ -9,7 +9,7 @@
       <a class="reddit" target="_blank" href="https://www.reddit.com/r/ZEEPIN/"></a>
     </div>
     <div class="link">
-      <a  @click="$emit('setMenu',2)">About Galaxy</a>
+      <a  @click="$emit('setMenu',2)">{{$t("menu.about-us")}}</a>
      <!--  <a href="##">Blog</a> -->
       <a v-if="isI18n == 'en'" href="/#/TermsOfUse" target="_blank">{{$t("marketPlace.text9")}}</a>
       <a v-if="isI18n == 'cn'" href="/#/TermsOfUseCN" target="_blank">{{$t("marketPlace.text9")}}</a>
