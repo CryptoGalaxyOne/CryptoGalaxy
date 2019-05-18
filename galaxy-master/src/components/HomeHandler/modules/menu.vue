@@ -7,8 +7,8 @@
         <a class="item" :class="{'active':activeIndex == 'home'}"  @click="scrollTo('home')">{{$t("menu.home")}}</a>
         <a class="item" :class="{'active':activeIndex == 'about'}"  @click="scrollTo('about')">{{$t("menu.about-us")}}</a>
         <a class="item" :class="{'active':activeIndex == 'market-place'}"  @click="scrollTo('market-place')">{{$t("menu.market-place")}}</a>
-    <!--     <a class="item" :class="{'active':activeIndex == 'community'}" href="##" @click="scrollTo('community')">{{$t("menu.community")}}</a>
-        <a class="item" :class="{'active':activeIndex == 'introduction'}" href="##" @click="scrollTo('introduction')">{{$t("menu.introduction")}}</a> -->
+       <!--  <a class="item" :class="{'active':activeIndex == 'community'}" href="##" @click="scrollTo('community')">{{$t("menu.community")}}</a>-->
+        <a class="item" :class="{'active':activeIndex == 'introduction'}" href="##" @click="scrollTo('introduction')">{{$t("menu.introduction")}}</a> 
 <!--         <a class="item" :class="{'active':activeIndex == 'introduction'}" href="##" @click="scrollTo('introduction')">{{$t("menu.introduction")}}</a>
  --><!--         <a class="item" :class="{'active':activeIndex == 'about'}" href="javascript:;" @click="scrollTo('about')">{{$t("menu.about")}}</a>
         <a class="item" :class="{'active':activeIndex == 'gala'}" href="javascript:;" @click="scrollTo('gala')">{{$t("menu.gala")}}</a>

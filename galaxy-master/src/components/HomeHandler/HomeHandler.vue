@@ -11,6 +11,7 @@
     <Partner  v-if="menuIndex==1"/>
     <MarketPlace v-if="menuIndex==3"/>
     <AboutCG v-if="menuIndex==2"/>
+    <Introduction v-if="menuIndex==5"/>
     <Footer @setMenu="setMenu"/>
   </div>
 
@@ -39,6 +40,8 @@ import Footer from "./modules/footer";
 import MarketPlace from "./modules/marketPlace";
 //about CG
 import AboutCG from "./modules/aboutCG";
+//游戏说明
+import Introduction from "./modules/introduction";
 export default {
   name: "home",
   data(){
@@ -58,7 +61,8 @@ export default {
     Partner,
     Footer,
     MarketPlace,
-    AboutCG
+    AboutCG,
+    Introduction
   },
   /* beforeRouteEnter(to, from, next) {
     let router = getQuery('router');
