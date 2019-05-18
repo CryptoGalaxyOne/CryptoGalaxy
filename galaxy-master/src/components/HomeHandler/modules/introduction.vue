@@ -2,8 +2,8 @@
   <div class="Introduction">
     <div class="market-box">
       <div class="aboutcg-centen">
-        <img src="/static/img/about/c1.jpg" v-if="langName == 'cn'" alt>
-        <img src="/static/img/about/c1-en.jpg" v-if="langName == 'en'" alt>
+        <img src="/static/img/about/WechatIMG20.png"  alt>
+ <!--        <img src="/static/img/about/c1-en.jpg" v-if="langName == 'en'" alt> -->
 
         <h1>一、产品介绍</h1>
         <h2>1、CryptoGalaxy游戏简介</h2>
