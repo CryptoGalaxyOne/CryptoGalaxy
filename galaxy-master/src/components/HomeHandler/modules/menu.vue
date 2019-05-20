@@ -1,7 +1,7 @@
 <template>
   <div class="menu">
     <div class="main">
-      <a href="##" class="logo">galaxy</a>
+      <a href="##" class="logo" @click="scrollTo('home')">galaxy</a>
       <div hidden-in-lg class="trigger" @click="openMenu"></div>
       <nav class="nav" :class="{open: trigger}" @click="closeMenu">
         <a class="item" :class="{'active':activeIndex == 'home'}"  @click="scrollTo('home')">{{$t("menu.home")}}</a>

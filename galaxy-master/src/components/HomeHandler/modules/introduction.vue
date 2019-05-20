@@ -2,7 +2,7 @@
   <div class="Introduction">
     <div class="market-box">
       <div class="aboutcg-centen">
-        <img src="/static/img/about/WechatIMG20.png"  alt>
+        <img src="/static/img/about/WechatIMG20.jpg"  alt>
  <!--        <img src="/static/img/about/c1-en.jpg" v-if="langName == 'en'" alt> -->
 
         <h1>一、产品介绍</h1>
@@ -19,8 +19,8 @@
         <img src="/static/img/about/c7.jpg" v-if="langName == 'cn'" alt>
         <img src="/static/img/about/c7-en.jpg" v-if="langName == 'en'" alt>
         <p>《Crypto Galaxy》整体分为5个阶段，即5个大版本，CG1.0 经历了星球创世阶段，目前阶段为第二个版 本:星际起源(CG2.0 )，开始逐步出现生命体，在CG3.0 将逐步发展到科技，CG4 .0 将爆发战争，在 CG5.0 时，将逐步进入觉醒、文明的阶段。</p>
-        <img src="/static/img/about/WX20190518-092726.png" v-if="langName == 'cn'" alt>
-        <img src="/static/img/about/WX20190518-092726.png" v-if="langName == 'en'" alt>
+        <img src="/static/img/about/introduction-cn.jpg" v-if="langName == 'cn'" alt>
+        <img src="/static/img/about/introduction-en.jpg" v-if="langName == 'en'" alt>
 
         <h2>3.创作背景</h2>
         <p>《CryptoGalaxy》是Zeepin Chain上的第一款区块链娱乐应用。近两年区块链热潮席卷了各行各业，成为 当下最热⻔也是最受瞩目的信息技术之一，相比较与大数据、云计算、人工智能等这些信息技术，区块链 的“去中心化”、“不可篡改”、“公开透明”等特性成为了人们交流的热点。而在金融领域提起区块链，大家的 第一反应就是数字货币。这样的反应源于区块链技术是随着比特币的诞生而出现。</p>
@@ -205,7 +205,7 @@ export default {
       h1 {
         font-size: 20px;
         color: #fff;
-        margin: 80px 0 50px;
+        margin: 50px 0 50px;
       }
       h2 {
         font-size: 16px;
