@@ -45,7 +45,7 @@
       
           <a href="https://play.google.com/store/apps/details?id=com.zeepin.CryptoGalaxy" target="_blank" class="download-android">{{$t("banner.googlePlay")}}</a>
            
-          <a href="http://cdn.zeepin.io/cryptogalaxy/CryptoGalaxy2.0.7.apk" class="download-android">{{$t("banner.android")}}</a>
+          <a href="http://cdn.zeepin.io/cryptogalaxy/CryptoGalaxy2.0.8.apk" class="download-android">{{$t("banner.android")}}</a>
         </div>
         <div class="countdown-protocol">
           <p>{{$t("marketPlace.text8")}}</p>
