@@ -5,6 +5,7 @@
       <div hidden-in-lg class="trigger" @click="openMenu"></div>
       <nav class="nav" :class="{open: trigger}" @click="closeMenu">
         <a class="item" :class="{'active':activeIndex == 'home'}"  @click="scrollTo('home')">{{$t("menu.home")}}</a>
+        <a class="item" :class="{'active':activeIndex == 'wiki'}"  @click="scrollTo('wiki')">{{$t("menu.wiki")}}</a>
         <a class="item" :class="{'active':activeIndex == 'about'}"  @click="scrollTo('about')">{{$t("menu.about-us")}}</a>
         <a class="item" :class="{'active':activeIndex == 'market-place'}"  @click="scrollTo('market-place')">{{$t("menu.market-place")}}</a>
        <!--  <a class="item" :class="{'active':activeIndex == 'community'}" href="##" @click="scrollTo('community')">{{$t("menu.community")}}</a>-->
@@ -103,6 +104,9 @@ export default {
         case 'about':
           this.$emit("setMenu",2);
           //this.$router.push({path:'/about'});
+          break;
+        case 'wiki':
+           window.open(' https://cryptogalaxy.gamepedia.com/CryptoGalaxy_Wiki');
           break;
         case 'market-place':
           this.$emit("setMenu",3);
