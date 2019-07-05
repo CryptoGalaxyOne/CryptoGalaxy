@@ -224,7 +224,7 @@ export default {
       width:100%;
       padding:20px;
       box-sizing: border-box;
-      bottom: 120/@unit;
+      bottom: 110/@unit;
 
       p{
          font-weight: 300;
@@ -234,23 +234,23 @@ export default {
         text-align: center;
       } 
       a{
-        margin-bottom: 40 / @unit;
+        margin-bottom: 30 / @unit;
         display: block;
-        height: 90 / @unit;
+        height: 80 / @unit;
         background: #70fec3;
         border-radius: 100 / @unit;
         font-weight: 500;
         font-size: 30 / @unit;
         color: #5068e3;
         text-align: center;
-        line-height: 90 / @unit;
+        line-height: 80 / @unit;
       }
     }
     .bd {
       .link {
         display: block;
         width: 660 / @unit;
-        height: 90 / @unit;
+        height: 80 / @unit;
         position: absolute;
         bottom: 250 / @unit;
         left: 50%;
@@ -261,7 +261,7 @@ export default {
         font-size: 30 / @unit;
         color: #5068e3;
         text-align: center;
-        line-height: 90 / @unit;
+        line-height: 80 / @unit;
         &.doing {
           text-indent: -99999em;
           &::after {
