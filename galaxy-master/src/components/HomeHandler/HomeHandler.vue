@@ -2,7 +2,7 @@
 
   <div class="wrapper">
     <Menu @setMenu="setMenu"/>
-    <Banner v-if="menuIndex==1"/>
+    <Banner v-if="menuIndex==1" @openAndroid="openAndroid"/>
     <About  v-if="menuIndex==1"  @setMenu="setMenu" />
     <Sell  v-if="menuIndex==1"/>
     <System  v-if="menuIndex==1"/>
@@ -13,6 +13,8 @@
     <AboutCG v-if="menuIndex==2"/>
     <Introduction v-if="menuIndex==5"/>
     <Footer @setMenu="setMenu"/>
+    <!---->
+    <AndroidDownload v-if="isDownload" @openAndroid="openAndroid"/>
   </div>
 
 </template>
@@ -42,11 +44,14 @@ import MarketPlace from "./modules/marketPlace";
 import AboutCG from "./modules/aboutCG";
 //游戏说明
 import Introduction from "./modules/introduction";
+//安卓下载
+import AndroidDownload from "./modules/AndroidDownload";
 export default {
   name: "home",
   data(){
     return{
       menuIndex:1, //1:home  2: about CG 3:market place  4:community 5:introduction
+      isDownload:false,
     }
   },
   components: {
@@ -62,7 +67,8 @@ export default {
     Footer,
     MarketPlace,
     AboutCG,
-    Introduction
+    Introduction,
+    AndroidDownload
   },
   /* beforeRouteEnter(to, from, next) {
     let router = getQuery('router');
@@ -75,6 +81,9 @@ export default {
   methods:{
     setMenu(index){
       this.menuIndex = index;
+    },
+    openAndroid(blo){
+      this.isDownload = blo;
     }
   }
 };
@@ -85,4 +94,5 @@ function getQuery(key) {
   if (r != null) return unescape(r[2]);
   return null;
 }
+
 </script>

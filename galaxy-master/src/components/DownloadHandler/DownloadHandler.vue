@@ -4,16 +4,21 @@
     <div class="hd">
       <img class="logo" src="@/assets/img/download_logo.png" alt="" />
       <div class="title">CryptoGalaxy</div>
-      <div class="version">2.0.8</div>
+      <div class="version">2.0.9</div>
       <div class="des">Discover &amp; Collect Your Planet </div>
       <div class="subdes">The first ever virtual universe based on blockchain</div>
     </div>
 
-    <div class="bd">
+  <!--   <div class="bd">
       <a class="link" :class="{doing: doing}" @click="download" href="itms-services://?action=download-manifest&url=https://cryptogalaxy.one/static/manifest.plist">Install iOS App</a>
-      <!--<a class="link" :class="{doing: doing}" @click="download" href="http://aq.pgyer.com/b0f3b49243a87f4a89083b38e8de3836.ipa?attname=CSR201811010613OHYCSG-resigned.ipa">Install iOS App</a>-->
+      <a class="link" :class="{doing: doing}" @click="download" href="http://aq.pgyer.com/b0f3b49243a87f4a89083b38e8de3836.ipa?attname=CSR201811010613OHYCSG-resigned.ipa">Install iOS App</a>
+    </div> -->
+    <div class="my-bd">
+      <p class="prompt"> {{$t("banner.prompt1")}} </p>
+      <a class="link" :class="{doing: doing}" @click="download" href="itms-services://?action=download-manifest&url=https://cryptogalaxy.one/static/ios/International/manifest.plist">{{$t("banner.prompt3")}}</a>
+      <p class="prompt"> {{$t("banner.prompt2")}} </p>
+      <a class="link" :class="{doing: doing}" @click="download" href="itms-services://?action=download-manifest&url=https://cryptogalaxy.one/static/ios/Asian/manifest.plist">{{$t("banner.prompt3")}}</a>
     </div>
-
     <div class="ft">
       <img class="footer-logo" src="@/assets/img/download_footer.png" alt="" />
     </div>
@@ -82,7 +87,33 @@ export default {
         text-align: center;
       }
     }
+    .my-bd{
+      position:absolute;
+      width:100%;
+      padding:20px;
+      box-sizing: border-box;
+      bottom: 140/@unit;
 
+      p{
+         font-weight: 300;
+        font-size: 18 / @unit;
+        color: #ffffff;
+        margin-bottom: 10 / @unit;
+        text-align: center;
+      } 
+      a{
+        margin-bottom: 40 / @unit;
+        display: block;
+        height: 90 / @unit;
+        background: #70fec3;
+        border-radius: 100 / @unit;
+        font-weight: 500;
+        font-size: 30 / @unit;
+        color: #5068e3;
+        text-align: center;
+        line-height: 90 / @unit;
+      }
+    }
     .bd {
       .link {
         display: block;
@@ -157,7 +188,7 @@ export default {
         width: 230 / @unit;
         height: 230 / @unit;
         display: block;
-        margin: 160 / @unit auto 25 / @unit;
+        margin: 110 / @unit auto 25 / @unit;
       }
       .title {
         font-weight: 500;
@@ -188,6 +219,33 @@ export default {
       }
     }
 
+  .my-bd{
+      position:absolute;
+      width:100%;
+      padding:20px;
+      box-sizing: border-box;
+      bottom: 120/@unit;
+
+      p{
+         font-weight: 300;
+        font-size: 18 / @unit;
+        color: #ffffff;
+        margin-bottom: 10 / @unit;
+        text-align: center;
+      } 
+      a{
+        margin-bottom: 40 / @unit;
+        display: block;
+        height: 90 / @unit;
+        background: #70fec3;
+        border-radius: 100 / @unit;
+        font-weight: 500;
+        font-size: 30 / @unit;
+        color: #5068e3;
+        text-align: center;
+        line-height: 90 / @unit;
+      }
+    }
     .bd {
       .link {
         display: block;
@@ -230,7 +288,7 @@ export default {
         position: absolute;
         width: 377 / @unit;
         // height: 144 / @unit;
-        bottom: 90 / @unit;
+        bottom: 60 / @unit;
         left: 50%;
         transform: translateX(-50%);
       }

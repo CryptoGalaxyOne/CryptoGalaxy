@@ -44,8 +44,10 @@
           <a href="/#/ios" target="_blank" class="download-android">{{$t("banner.ios")}}</a>
       
           <a href="https://play.google.com/store/apps/details?id=com.zeepin.CryptoGalaxy" target="_blank" class="download-android">{{$t("banner.googlePlay")}}</a>
+         
+          <a @click="$emit('openAndroid',true)" class="download-android">{{$t("banner.android")}}</a>
            
-          <a href="http://cdn.zeepin.io/cryptogalaxy/CryptoGalaxy2.0.8.apk" class="download-android">{{$t("banner.android")}}</a>
+         <!--  <a href="http://cdn.zeepin.io/cryptogalaxy/CryptoGalaxy2.0.8.apk" class="download-android">{{$t("banner.android")}}</a> -->
         </div>
         <div class="countdown-protocol">
           <p>{{$t("marketPlace.text8")}}</p>
@@ -227,6 +229,7 @@ export default {
   }
   .banner .main .copywriting .links a.download-android{
     margin-left:6%;
+    cursor: pointer;
   }
   .banner .main .copywriting .links a.invite {
     color: rgba(80, 104, 227, 1);
