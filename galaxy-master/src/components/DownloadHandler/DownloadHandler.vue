@@ -4,7 +4,7 @@
     <div class="hd">
       <img class="logo" src="@/assets/img/download_logo.png" alt="" />
       <div class="title">CryptoGalaxy</div>
-      <div class="version">2.0.9</div>
+      <div class="version">2.1.0</div>
       <div class="des">Discover &amp; Collect Your Planet </div>
       <div class="subdes">The first ever virtual universe based on blockchain</div>
     </div>
