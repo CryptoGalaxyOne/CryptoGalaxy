@@ -53,6 +53,13 @@ export default {
       activeIndex:'home',
     };
   },
+  created(){
+    //console.log(localStorage.getItem('lang'));
+    if(localStorage.getItem('lang')){
+      this.flag = localStorage.getItem('lang');
+       this.$i18n.locale = localStorage.getItem('lang');
+    }
+  },
   watch:{
    '$route.path':function(newVal,oldVal){
     //console.log(newVal);
@@ -141,7 +148,10 @@ export default {
       document.querySelector("body").style.overflow = "unset";
     },
     i18n(lan) {
-      window.location.href = `?lan=${lan}`;
+      //window.location.href = `?lan=${lan}`;
+    localStorage.setItem('lang',lan);
+    this.flag = lan;
+    this.$i18n.locale = lan;
     },
   }
 };

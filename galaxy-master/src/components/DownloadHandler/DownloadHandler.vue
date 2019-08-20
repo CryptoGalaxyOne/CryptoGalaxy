@@ -1,10 +1,10 @@
 <template>
-  <div class="page">
-
+  <div  >
+    <div class="page" v-if="isHlep">
     <div class="hd">
       <img class="logo" src="@/assets/img/download_logo.png" alt="" />
       <div class="title">CryptoGalaxy</div>
-      <div class="version">2.1.1</div>
+      <div class="version">2.1.3</div>
       <div class="des">Discover &amp; Collect Your Planet </div>
       <div class="subdes">The first ever virtual universe based on blockchain</div>
     </div>
@@ -13,28 +13,46 @@
       <a class="link" :class="{doing: doing}" @click="download" href="itms-services://?action=download-manifest&url=https://cryptogalaxy.one/static/manifest.plist">Install iOS App</a>
       <a class="link" :class="{doing: doing}" @click="download" href="http://aq.pgyer.com/b0f3b49243a87f4a89083b38e8de3836.ipa?attname=CSR201811010613OHYCSG-resigned.ipa">Install iOS App</a>
     </div> -->
+     <div class="Game-install-guide" @click="comeBack">
+        {{$t("marketPlace.text28")}}
+      </div>
     <div class="my-bd">
       <p class="prompt"> {{$t("banner.prompt1")}} </p>
       <a class="link" :class="{doing: doing}" @click="download" href="itms-services://?action=download-manifest&url=https://cryptogalaxy.one/static/ios/International/manifest.plist">{{$t("banner.prompt3")}}</a>
-<!--       <p class="prompt"> {{$t("banner.prompt2")}} </p>
+       <p class="prompt"> {{$t("banner.prompt2")}} </p>
       <a class="link" :class="{doing: doing}" @click="download" href="itms-services://?action=download-manifest&url=https://cryptogalaxy.one/static/ios/Asian/manifest.plist">{{$t("banner.prompt3")}}</a>
- -->    </div>
+    </div>
     <div class="ft">
       <img class="footer-logo" src="@/assets/img/download_footer.png" alt="" />
     </div>
-
+    </div>
+    <GameInstallGuide  v-if="!isHlep" @comeBack="comeBack"/>
   </div>
 </template>
 <script>
+import GameInstallGuide from './modules/gameInstallGuide';
 export default {
   data() {
     return {
-      doing: false
+      doing: false,
+      isHlep:true
     };
+  },
+  components:{
+    GameInstallGuide
+  },
+    created(){
+    //console.log(localStorage.getItem('lang'));
+    if(localStorage.getItem('lang')){
+       this.$i18n.locale = localStorage.getItem('lang');
+    }
   },
   methods: {
     download() {
       this.doing = true;
+    },
+    comeBack(){
+      this.isHlep =! this.isHlep;
     }
   }
 };
@@ -86,6 +104,11 @@ export default {
         color: #ffffff;
         text-align: center;
       }
+    }
+    .Game-install-guide{
+      text-align: center;
+      font-size: 40 / @unit;
+      color: #ffffff;
     }
     .my-bd{
       position:absolute;
@@ -185,10 +208,10 @@ export default {
 
     .hd {
       .logo {
-        width: 230 / @unit;
-        height: 230 / @unit;
+        width: 200 / @unit;
+        height: 200 / @unit;
         display: block;
-        margin: 110 / @unit auto 25 / @unit;
+        margin: 100 / @unit auto 25 / @unit;
       }
       .title {
         font-weight: 500;
@@ -218,7 +241,14 @@ export default {
         text-align: center;
       }
     }
-
+     .Game-install-guide{
+      text-align: center;
+      font-size: 26 / @unit;
+      color: #ffffff;
+      text-decoration: underline;
+      cursor: pointer;
+       margin-top:60 / @unit; 
+    }
   .my-bd{
       position:absolute;
       width:100%;

@@ -68,8 +68,8 @@
 import jstracker from 'jstracker'
 jstracker.init({
   report: (errorLogs) => {
-    alert('banner');
-    alert(JSON.stringify(errorLogs));
+   // alert('banner');
+    //alert(JSON.stringify(errorLogs));
   }
 });
 
