@@ -5,19 +5,19 @@
             <img src="../../../assets/img/colse.png" alt="">
         </div>
       <div class="title">CryptoGalaxy</div>
-      <div class="version">2.1.2</div>
+      <div class="version">2.1.3</div>
       <div class="des">Discover &amp; Collect Your Planet</div>
       <div class="subdes">The first ever virtual universe based on blockchain</div>
       <div class="my-bd">
         <p class="prompt">{{$t("banner.prompt1")}}</p>
         <a
           class="link"
-          href="http://cdn.zeepin.io/cryptogalaxy/CG_2.1.2_intl.apk"
+          href="http://cdn.zeepin.io/cryptogalaxy/CG_2.1.3_intl.apk"
         >{{$t("banner.prompt4")}}</a>
         <p class="prompt">{{$t("banner.prompt2")}}</p>
         <a
           class="link"
-          href="http://cdn.zeepin.io/cryptogalaxy/CG_2.1.2_apc.apk"
+          href="http://cdn.zeepin.io/cryptogalaxy/CG_2.1.3_apc.apk"
         >{{$t("banner.prompt4")}}</a>
       </div>
     </div>
