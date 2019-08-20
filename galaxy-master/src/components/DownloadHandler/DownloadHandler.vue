@@ -4,7 +4,7 @@
     <div class="hd">
       <img class="logo" src="@/assets/img/download_logo.png" alt="" />
       <div class="title">CryptoGalaxy</div>
-      <div class="version">2.1.1</div>
+      <div class="version">2.1.2</div>
       <div class="des">Discover &amp; Collect Your Planet </div>
       <div class="subdes">The first ever virtual universe based on blockchain</div>
     </div>
@@ -16,9 +16,9 @@
     <div class="my-bd">
       <p class="prompt"> {{$t("banner.prompt1")}} </p>
       <a class="link" :class="{doing: doing}" @click="download" href="itms-services://?action=download-manifest&url=https://cryptogalaxy.one/static/ios/International/manifest.plist">{{$t("banner.prompt3")}}</a>
-<!--       <p class="prompt"> {{$t("banner.prompt2")}} </p>
+       <p class="prompt"> {{$t("banner.prompt2")}} </p>
       <a class="link" :class="{doing: doing}" @click="download" href="itms-services://?action=download-manifest&url=https://cryptogalaxy.one/static/ios/Asian/manifest.plist">{{$t("banner.prompt3")}}</a>
- -->    </div>
+    </div>
     <div class="ft">
       <img class="footer-logo" src="@/assets/img/download_footer.png" alt="" />
     </div>
