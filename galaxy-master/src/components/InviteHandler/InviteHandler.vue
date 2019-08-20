@@ -13,7 +13,7 @@
 
 </template>
 <script>
-import Header from "./modules/header";
+import Header from "./modules/Header";
 import Card from "./modules/Card";
 import Download from "./modules/Download";
 import About from "./modules/About";

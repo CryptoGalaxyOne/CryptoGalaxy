@@ -15,11 +15,11 @@
           class="link"
           href="http://cdn.zeepin.io/cryptogalaxy/CG_2.1.3_intl.apk"
         >{{$t("banner.prompt4")}}</a>
-         <p class="prompt">{{$t("banner.prompt2")}}</p>
+        <p class="prompt">{{$t("banner.prompt2")}}</p>
         <a
           class="link"
           href="http://cdn.zeepin.io/cryptogalaxy/CG_2.1.3_apc.apk"
-        >{{$t("banner.prompt4")}}</a> 
+        >{{$t("banner.prompt4")}}</a>
       </div>
     </div>
   </div>

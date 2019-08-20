@@ -10,7 +10,7 @@
 
 </template>
 <script>
-import HeaderWithBack from "./modules/headerWithBack";
+import HeaderWithBack from "./modules/HeaderWithBack";
 import ShareCard from "./modules/ShareCard";
 import Qrcode from "./modules/Qrcode";
 
