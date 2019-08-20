@@ -31,6 +31,7 @@ export default {
     .GameInstallGuide{
         width:100%;
         padding:10px;
+        background: #fff;
         h1{
             font-size: 16px;
             text-align: center;
